@@ -6,8 +6,23 @@ import facebook from "../assets/svg/footer/social/facebook.svg"
 import location from "./svg/footer/contact/location.svg"
 import mail from "./svg/footer/contact/mail.svg"
 import mobile from "./svg/footer/contact/mobile.svg"
+import crane from "./svg/mainPage/crane.svg"
+import building from "./svg/mainPage/building.svg"
 
-
+export const mainFirstCard = [
+  {
+    id: nanoid(),
+    img: building,
+    number: '100+',
+    text: 'مشاريع تم انجازها خلال السنوات الخمس الأخيرة',
+  },
+  {
+    id: nanoid(),
+    img: crane,
+    number: '100+',
+    text: 'مشروع قيد الانشاء الآن',
+  },
+];
 
 export const pages = [
     {
