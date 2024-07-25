@@ -1,8 +1,10 @@
 import React from 'react';
-import { Video } from '../subComponent';
+import { MainHero } from '../component';
 
 const Landing = () => {
-  return <Video/>;
+  return <>
+    <MainHero/>
+  </>;
 };
 
 export default Landing;

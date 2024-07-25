@@ -2,7 +2,7 @@ import React from 'react'
 import play from '../assets/svg/video/play.svg';
 const video = () => {
   return (
-    <div className="relative flex justify-center items-center bg-theRed max-w-xl  lg:w-2/5 aspect-square p-4">
+    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl  lg:w-2/5 aspect-square p-4">
       <div className="relative w-full h-full">
         <div className="absolute top-0 left-0 right-[-20%] bottom-0">
           <video autoPlay muted loop className="w-full h-full object-cover">
