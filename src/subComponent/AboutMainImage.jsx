@@ -17,7 +17,9 @@ const AboutMainImage = () => {
         <img src={check} alt="check" />
         <h1 className="text-2xl font-tajawal font-normal text-black">4.8</h1>
         <img src={stars} alt="stars" />
-        <p className="text-black font-tajawal text-sm lg:text-lg">عميل سعيد</p>
+        <p className="text-theDGray font-tajawal text-sm font-extraLight lg:text-lg">
+          عميل سعيد
+        </p>
         <p className="text-black font-tajawal">500+ Reviews </p>
       </div>
       <div className="absolute bottom-0 right-0 py-4 gap-x-4 bg-theLGray px-4 flex justify-evenly items-center">
