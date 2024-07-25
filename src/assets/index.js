@@ -1,13 +1,30 @@
-import { nanoid } from "nanoid";
-import twitter from "../assets/svg/footer/social/twitter.svg"
-import linkedin from "../assets/svg/footer/social/linkedin.svg"
-import instagram from "../assets/svg/footer/social/instagram.svg"
-import facebook from "../assets/svg/footer/social/facebook.svg"
-import location from "./svg/footer/contact/location.svg"
-import mail from "./svg/footer/contact/mail.svg"
-import mobile from "./svg/footer/contact/mobile.svg"
-import crane from "./svg/mainPage/crane.svg"
-import building from "./svg/mainPage/building.svg"
+import { nanoid } from 'nanoid';
+import twitter from '../assets/svg/footer/social/twitter.svg';
+import linkedin from '../assets/svg/footer/social/linkedin.svg';
+import instagram from '../assets/svg/footer/social/instagram.svg';
+import facebook from '../assets/svg/footer/social/facebook.svg';
+import location from './svg/footer/contact/location.svg';
+import mail from './svg/footer/contact/mail.svg';
+import mobile from './svg/footer/contact/mobile.svg';
+import crane from './svg/mainPage/crane.svg';
+import building from './svg/mainPage/building.svg';
+import specialty from './svg/mainPage/Speciality.svg';
+import skill from './svg/mainPage/skill.svg';
+
+export const expertise = [
+  {
+    id: nanoid(),
+    title: 'مهارة وخبرة',
+    img: skill,
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي الفعال على جميع انواع المباني بخبرة تتجاوز 25 عام ...',
+  },
+  {
+    id: nanoid(),
+    title: 'تخصصات عدة',
+    img: specialty,
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي الفعال على جميع انواع المباني بخبرة تتجاوز 25 عام ...',
+  },
+];
 
 export const mainFirstCard = [
   {
@@ -25,104 +42,104 @@ export const mainFirstCard = [
 ];
 
 export const pages = [
-    {
-        id:nanoid(),
-        text:"الرئيسية",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"جديد الشركة",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"مشاريعنا",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"عن الشركة",
-        to:"/"
-    },
-]
+  {
+    id: nanoid(),
+    text: 'الرئيسية',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'جديد الشركة',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'مشاريعنا',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'عن الشركة',
+    to: '/',
+  },
+];
 export const footerLinks = [
-    {
-        id:nanoid(),
-        text:"الرئيسية",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"من نحن",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"اخر الاخبار",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"الاسالة المتكررة",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"المشاريع",
-        to:"/"
-    },
-]
+  {
+    id: nanoid(),
+    text: 'الرئيسية',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'من نحن',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'اخر الاخبار',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'الاسالة المتكررة',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'المشاريع',
+    to: '/',
+  },
+];
 export const projects = [
-    {
-        id:nanoid(),
-        text:"فلل سكنية",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"مساجد",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"مدارس",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"مستشفيات",
-        to:"/"
-    },
-    {
-        id:nanoid(),
-        text:"مشاريع كبرى",
-        to:"/"
-    },
-]
+  {
+    id: nanoid(),
+    text: 'فلل سكنية',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'مساجد',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'مدارس',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'مستشفيات',
+    to: '/',
+  },
+  {
+    id: nanoid(),
+    text: 'مشاريع كبرى',
+    to: '/',
+  },
+];
 
 export const footerSocial = [
-    {
-        id:nanoid(),
-        href:"",
-        img:twitter,
-    },
-    {
-        id:nanoid(),
-        href:"",
-        img:linkedin,
-    },
-    {
-        id:nanoid(),
-        href:"",
-        img:instagram,
-    },
-    {
-        id:nanoid(),
-        href:"",
-        img:facebook,
-    },
-]
+  {
+    id: nanoid(),
+    href: '',
+    img: twitter,
+  },
+  {
+    id: nanoid(),
+    href: '',
+    img: linkedin,
+  },
+  {
+    id: nanoid(),
+    href: '',
+    img: instagram,
+  },
+  {
+    id: nanoid(),
+    href: '',
+    img: facebook,
+  },
+];
 
 export const contactFooter = [
   {
