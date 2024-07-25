@@ -3,12 +3,12 @@ import { theCarousel } from '../assets';
 
 const BigCarousel = () => {
   return (
-    <div className="hidden w-4/5 bg-white lg:w-3/5 md:inline-flex md:carousel md:gap-x-3 lg:gap-x-4 carousel-end ">
+    <div className="hidden w-4/5 bg-white  md:inline-flex md:carousel md:gap-x-3 lg:gap-x-4 carousel-end ">
       {theCarousel.map((link) => {
         return (
           <div
             key={link.id}
-            className="carousel-item w-2/5 mx-4 flex flex-col bg-theLGray justify-center items-start gap-y-3 "
+            className="carousel-item w-2/5 lg:w-[265px]  flex flex-col bg-theLGray justify-center items-start gap-y-3 "
           >
             <img src={link.img} alt="proj" />
             <h1 className="font-tajawal font-bold text-lg text-black px-2">
