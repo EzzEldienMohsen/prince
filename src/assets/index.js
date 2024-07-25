@@ -126,3 +126,9 @@ export const contactFooter = [
     text: 'info@exampel.com',
   },
 ];
+export const mainFormOptions = [
+  { value: '', label: 'اختر المدينة' },
+  { value: 'dubai', label: 'دبي' },
+  { value: 'abu-dhabi', label: 'أبو ظبي' },
+  { value: 'sharjah', label: 'الشارقة' },
+];

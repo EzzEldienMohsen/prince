@@ -6,3 +6,4 @@ export { default as SecondFooterDiv } from './SecondFooterDiv';
 export { default as ThirdFooterDiv } from './ThirdFooterDiv';
 export { default as Video } from './Video';
 export { default as MainHeroInfo } from './MainHeroInfo';
+export { default as FormComponent } from './FormComponent';
