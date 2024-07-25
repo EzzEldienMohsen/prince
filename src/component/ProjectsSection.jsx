@@ -3,7 +3,7 @@ import { ProjectsCards, ProjectsNavBar } from '../subComponent';
 
 const ProjectsSection = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center px-8 lg:px-16 my-32 gap-y-6 md:gap-y-8 lg:gap-y-12 text-center">
+    <div className="w-full flex flex-col justify-center items-center px-8 lg:px-16 my-16 gap-y-6 md:gap-y-8 lg:gap-y-12 text-center">
       <p className="font-tajawal font-light text-theRed text-lg md:text-2xl">
         مشاريعنا
       </p>

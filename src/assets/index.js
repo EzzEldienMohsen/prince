@@ -13,6 +13,9 @@ import skill from './svg/mainPage/skill.svg';
 import one from './svg/mainPage/carousel1.svg';
 import two from './svg/mainPage/carousel2.svg';
 import three from './svg/mainPage/carousel3.svg';
+import four from './svg/mainPage/proj1.svg';
+import five from './svg/mainPage/proj2.svg';
+import six from './svg/mainPage/proj3.svg';
 import eng from './svg/mainPage/eng.svg';
 import date from './svg/mainPage/date.svg';
 
@@ -120,11 +123,55 @@ export const theProjectCard = [
     img: one,
     title: 'اخر اخبار مشاريعنا الانشائية',
     text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
-   
+
     DIcon: date,
     DText: '22/5/2024',
   },
-  
+  {
+    id: nanoid(),
+    img: four,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+
+    DIcon: date,
+    DText: '22/5/2024',
+  },
+  {
+    id: nanoid(),
+    img: five,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+
+    DIcon: date,
+    DText: '22/5/2024',
+  },
+  {
+    id: nanoid(),
+    img: two,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+
+    DIcon: date,
+    DText: '22/5/2024',
+  },
+  {
+    id: nanoid(),
+    img: six,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+
+    DIcon: date,
+    DText: '22/5/2024',
+  },
+  {
+    id: nanoid(),
+    img: three,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+
+    DIcon: date,
+    DText: '22/5/2024',
+  },
 ];
 
 export const expertise = [
