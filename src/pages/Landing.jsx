@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutMain, CarouselSection, FirstMainCard, FormCard, MainHero, SecondMainCard, TheImageSection } from '../component';
+import { AboutMain, CarouselSection, FirstMainCard, FormCard, MainHero, ProjectsSection, SecondMainCard, TheImageSection } from '../component';
 
 const Landing = () => {
   return (
@@ -11,6 +11,7 @@ const Landing = () => {
       <SecondMainCard/>
       <CarouselSection/>
       <TheImageSection/>
+      <ProjectsSection/>
     </div>
   );
 };

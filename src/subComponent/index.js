@@ -10,3 +10,5 @@ export { default as FormComponent } from './FormComponent';
 export { default as AboutMainImage } from './AboutMainImage';
 export { default as AboutMainInfo } from './AboutMainInfo';
 export { default as Carousel } from './Carousel';
+export { default as ProjectsNavBar } from './ProjectsNavBar';
+export { default as ProjectsCards } from './ProjectsCards';
