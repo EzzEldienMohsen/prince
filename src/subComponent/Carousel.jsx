@@ -1,9 +1,10 @@
 import React from 'react';
-import { BigCarousel } from '../subSubComponent';
+import { BigCarousel, SmallCarousel } from '../subSubComponent';
 
 const Carousel = () => {
   return <>
     <BigCarousel/>
+    <SmallCarousel/>
   </>;
 };
 

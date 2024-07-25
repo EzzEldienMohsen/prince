@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../subComponent/Carousel';
+import { Carousel } from '../subComponent';
 
 const CarouselSection = () => {
   return (

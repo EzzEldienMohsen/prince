@@ -5,3 +5,4 @@ export { default as FormRow } from './FormRow';
 export { default as FormSelect } from './FormSelect';
 export { default as MainButtons } from './MainButtons';
 export { default as BigCarousel } from './BigCarousel';
+export { default as SmallCarousel } from './SmallCarousel';
