@@ -10,7 +10,7 @@ const SmallCarousel = () => {
             key={link.id}
             className="carousel-item w-full flex flex-col bg-theLGray justify-center items-start gap-y-3 "
           >
-            <img src={link.img} alt="proj" />
+            <img src={link.img} alt="project" />
             <h1 className="font-tajawal font-bold text-lg text-black px-2">
               {link.title}
             </h1>
