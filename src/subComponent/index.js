@@ -12,3 +12,4 @@ export { default as AboutMainInfo } from './AboutMainInfo';
 export { default as Carousel } from './Carousel';
 export { default as ProjectsNavBar } from './ProjectsNavBar';
 export { default as ProjectsCards } from './ProjectsCards';
+export { default as FAQsComponent } from './FAQsComponent';

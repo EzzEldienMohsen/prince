@@ -10,11 +10,20 @@ import crane from './svg/mainPage/crane.svg';
 import building from './svg/mainPage/building.svg';
 import specialty from './svg/mainPage/Speciality.svg';
 import skill from './svg/mainPage/skill.svg';
-import one from "./svg/mainPage/carousel1.svg"
-import two from "./svg/mainPage/carousel2.svg"
-import three from "./svg/mainPage/carousel3.svg"
-import eng from "./svg/mainPage/eng.svg"
-import date from "./svg/mainPage/date.svg"
+import one from './svg/mainPage/carousel1.svg';
+import two from './svg/mainPage/carousel2.svg';
+import three from './svg/mainPage/carousel3.svg';
+import eng from './svg/mainPage/eng.svg';
+import date from './svg/mainPage/date.svg';
+
+export const theFAQ = [
+  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
+  { id: nanoid(), text: 'كيف يتم الاتفاق على المشروعات الكبرى في شركة برنس؟' },
+  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
+  { id: nanoid(), text: 'كيف يتم الاتفاق على المشروعات الكبرى في شركة برنس؟' },
+  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
+];
+
 export const theCarousel = [
   {
     id: nanoid(),
@@ -24,8 +33,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -35,8 +44,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -46,8 +55,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -57,8 +66,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -68,8 +77,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -79,8 +88,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -90,8 +99,8 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
   {
     id: nanoid(),
@@ -101,12 +110,22 @@ export const theCarousel = [
     engImg: eng,
     name: 'أحمد محمد',
     job: 'مهندس مدني',
-    DIcon:date,
-    DText:"22/5/2024"
+    DIcon: date,
+    DText: '22/5/2024',
   },
 ];
-
-
+export const theProjectCard = [
+  {
+    id: nanoid(),
+    img: one,
+    title: 'اخر اخبار مشاريعنا الانشائية',
+    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي  ...',
+   
+    DIcon: date,
+    DText: '22/5/2024',
+  },
+  
+];
 
 export const expertise = [
   {
