@@ -11,7 +11,6 @@ import four from './svg/mainPage/proj1.svg';
 import five from './svg/mainPage/proj2.svg';
 import six from './svg/mainPage/proj3.svg';
 import eng from './svg/mainPage/eng.svg';
-import date from './svg/mainPage/date.svg';
 
 export const theFAQ = [
   { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
