@@ -16,8 +16,8 @@ const FormSelect = ({ name, label, value, handleChange, options, w }) => {
         className={`py-2 px-4 border-2 w-full font-tajawal focus:border-theRed focus:text-theRed border-black text-black`}
       >
         {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
+          <option key={option.id} value={option.id}>
+            {option.name}
           </option>
         ))}
       </select>

@@ -31,5 +31,7 @@
   "mainProjectsTitle": "Prince Engineering Consulting Projects",
   "about2":"about",
   "hyperLinks":"Hyper Links",
-  "residential":"Residential projects"
+  "residential":"Residential projects",
+  "nameFormRow":"insert your name here",
+  "phoneFormRow":"phone number"
 }
