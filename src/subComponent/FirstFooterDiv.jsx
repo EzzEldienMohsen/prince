@@ -13,14 +13,14 @@ const FirstFooterDiv = ({ data }) => {
       <div className="flex flex-col justify-center items-center md:flex-row-reverse md:justify-between md:gap-x-2 mt-4 lg:mt-0">
         <div className="flex justify-between items-center gap-x-2 mb-4 md:mb-0">
           <div className="bg-[#29A71A] text-white font-tajawal px-6 py-4 flex justify-center items-center gap-x-2">
-            <p className="text-xs"> {`${data?.whatsapp_2} +`}</p>
-            <a href={`https://wa.me/${data?.whatsapp_2}`} target="_blank">
+            <p className="text-xs"> {`${data.whatsapp_2} +`}</p>
+            <a href={`https://wa.me/${data.whatsapp_2}`} target="_blank">
               <img src={src} alt="whatsApp" />
             </a>
           </div>
           <div className="bg-[#29A71A] text-white font-tajawal px-6 py-4 flex justify-center items-center gap-x-2">
-            <p className="text-xs"> {`${data?.whatsapp_1} +`}</p>
-            <a href={`https://wa.me/${data?.whatsapp_1}`} target="_blank">
+            <p className="text-xs"> {`${data.whatsapp_1} +`}</p>
+            <a href={`https://wa.me/${data.whatsapp_1}`} target="_blank">
               <img src={src} alt="whatsApp" />
             </a>
           </div>

@@ -11,11 +11,11 @@ const FooterSecondColumn = ({title,links}) => {
         {t(title)}
       </h1>
       <div className="flex flex-col justify-center items-start gap-y-2">
-        {links?.map((link) => {
+        {links.map((link) => {
           return (
             <Link
-              to={link?.to ? link.to : '/'}
-              key={link?.id}
+              to={link.to ? link.to : '/'}
+              key={link.id}
               className="text-theLGray font-tajawal"
             >
               {link?.key ? t(link?.key) : link?.name}

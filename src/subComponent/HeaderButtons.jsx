@@ -11,10 +11,10 @@ const HeaderButtons = ({data}) => {
       >
         {isArabic ? 'E N' : 'A R'}
       </button>
-      <a href={`https://wa.me/${data?.whatsapp_1}`} target="_blank">
+      <a href={`https://wa.me/${data.whatsapp_1}`} target="_blank">
         <img src={src} alt="whatsApp" />
       </a>
-      <a href={`https://wa.me/${data?.whatsapp_2}`} target="_blank">
+      <a href={`https://wa.me/${data.whatsapp_2}`} target="_blank">
         <img src={src} alt="whatsApp" />
       </a>
     </div>
