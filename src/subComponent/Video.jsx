@@ -1,17 +1,34 @@
-import React from 'react'
+import React from 'react';
 import play from '../assets/svg/video/play.svg';
-const video = () => {
+import { useGlobalData } from '../context/GlobalDataContext';
+import { useGlobalContext } from '../context/GlobalContext';
+
+const Video = () => {
+  const { data, isLoading } = useGlobalData();
+
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+ 
+  const youtubeVideoId = data?.home_about?.hero_video.split('v=')[1];
+  const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}`;
+
   return (
-    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl  lg:w-2/5 aspect-square p-4">
+    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl lg:w-2/5 aspect-square p-4">
       <div className="relative w-full h-full">
         <div className="absolute top-0 left-0 right-[-20%] bottom-0">
-          <video autoPlay muted loop className="w-full h-full object-cover">
-            <source
-              src="https://apolix.global/wp-content/uploads/2023/02/Apolix-background.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            width="100%"
+            height="100%"
+            src={youtubeEmbedUrl}
+            title="YouTube video player"
+           
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full object-cover"
+          ></iframe>
         </div>
         <div className="absolute inset-0 flex justify-center items-center">
           <button className="bg-theDGray rounded-full shadow-md">
@@ -21,6 +38,6 @@ const video = () => {
       </div>
     </div>
   );
-}
+};
 
-export default video
+export default Video;

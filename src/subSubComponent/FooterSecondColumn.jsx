@@ -9,7 +9,7 @@ const FooterSecondColumn = ({title,links}) => {
     <div className="hidden lg:flex flex-col justify-center items-start gap-y-4">
       <h1 className="text-theLGray font-tajawal font-bold text-xl">{t(title)}</h1>
       <div className="flex flex-col justify-center items-start gap-y-2">
-        {links.map((link) => {
+        {links?.map((link) => {
           return (
             <Link
               to={link?.to?link.to : "/"}

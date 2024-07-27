@@ -42,12 +42,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <GlobalDataProvider>
-        <GlobalProvider>
+      <GlobalProvider>
+        <GlobalDataProvider>
           <RouterProvider router={router} />
           <ReactQueryDevtools initialIsOpen={false} />
-        </GlobalProvider>
-      </GlobalDataProvider>
+        </GlobalDataProvider>
+      </GlobalProvider>
     </QueryClientProvider>
   );
 }
