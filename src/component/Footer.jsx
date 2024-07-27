@@ -1,14 +1,14 @@
 import React from 'react';
 import { FirstFooterDiv, SecondFooterDiv, ThirdFooterDiv } from '../subComponent';
 
-const Footer = () => {
+const Footer = ({data}) => {
   return (
     <div className="w-full flex flex-col mt-6">
-      <FirstFooterDiv />
+      <FirstFooterDiv data={data}/>
       <div className="w-full pt-16 pb-8 bg-theDGray flex justify-center items-center">
-        <SecondFooterDiv />
+        <SecondFooterDiv data={data} />
       </div>
-     <ThirdFooterDiv/>
+     <ThirdFooterDiv data={data}/>
     </div>
   );
 };

@@ -9,11 +9,11 @@ const FooterSecondColumn = ({title,links}) => {
         {links.map((link) => {
           return (
             <Link
-              to={link.to}
-              key={link.id}
+              to={link?.to?link.to : "/"}
+              key={link?.id}
               className="text-theLGray font-tajawal"
             >
-              {link.text}
+              {link?.text? link?.text : link?.name}
             </Link>
           );
         })}

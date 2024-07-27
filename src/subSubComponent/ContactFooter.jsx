@@ -1,19 +1,28 @@
+import { nanoid } from 'nanoid';
 import React from 'react'
-import { contactFooter } from '../assets';
+import location from '../assets/svg/footer/contact/location.svg';
+import mail from '../assets/svg/footer/contact/mail.svg';
+import mobile from '../assets/svg/footer/contact/mobile.svg';
 
-const ContactFooter = () => {
+
+const ContactFooter = ({data}) => {
+ const contactFooter = [
+   { id: nanoid(), img: location, text: data.address },
+   { id: nanoid(), img: mobile, text: data.phone },
+   { id: nanoid(), img: mail, text: data.email },
+ ];
   return (
-    <div className=" flex flex-col justify-center items-center gap-y-4 w-full lg:w-auto lg:items-start  mt-6 lg:mt-0">
+    <div className=" flex flex-col justify-center items-center gap-y-4 w-full  lg:w-1/3 lg:items-start  mt-6 lg:mt-0">
       <h1 className="text-theLGray font-tajawal font-bold text-xl">التواصل</h1>
-      <div className="flex flex-col text-theLGray  justify-center md:gap-x-10 lg:gap-x-0 items-start md:flex-row md:justify-between md:items-center gap-y-2 lg:flex-col lg:justify-center lg:items-start">
+      <div className="flex flex-col text-theLGray md:w-4/5 justify-center md:gap-x-10  lg:gap-x-0 items-start md:flex-row md:justify-center md:items-center gap-y-2 lg:flex-col lg:justify-center lg:items-start">
         {contactFooter.map((link) => {
           return (
             <div
               key={link.id}
-              className=" flex justify-between items-center gap-x-3"
+              className=" flex justify-start items-center gap-x-4"
             >
               <img src={link.img} alt="icon" />
-              <p>{link.text}</p>
+              <p className="text-sm ">{link.text}</p>
             </div>
           );
         })}
