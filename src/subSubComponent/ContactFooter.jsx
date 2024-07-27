@@ -14,16 +14,16 @@ const ContactFooter = ({data}) => {
    { id: nanoid(), img: mail, text: data?.email },
  ];
   return (
-    <div className=" flex flex-col justify-center items-center gap-y-4 w-full  lg:w-1/3 lg:items-start  mt-6 lg:mt-0">
+    <div className=" flex flex-col justify-center items-center gap-y-4 w-full  lg:w-1/4 lg:items-start  mt-6 lg:mt-0">
       <h1 className="text-theLGray font-tajawal font-normal text-xl">
         {t('fourthColumnTitle')}
       </h1>
-      <div className="flex flex-col text-theLGray md:w-4/5 justify-center md:gap-x-10  lg:gap-x-0 items-start md:flex-row md:justify-center md:items-center gap-y-2 lg:flex-col lg:justify-center lg:items-start">
+      <div className="flex flex-col text-theLGray md:w-4/5 lg:w-auto justify-center md:gap-x-10  lg:gap-x-0 items-start md:flex-row md:justify-center md:items-center gap-y-4 lg:flex-col lg:justify-items-start lg:items-start">
         {contactFooter.map((link) => {
           return (
             <div
               key={link.id}
-              className=" flex justify-start items-center gap-x-4"
+              className=" flex justify-center items-center gap-x-2"
             >
               <img src={link.img} alt="icon" />
               <p className="text-sm ">{link.text}</p>
