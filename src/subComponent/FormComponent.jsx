@@ -75,7 +75,7 @@ const FormComponent = () => {
         type="submit"
         className={`${w} bg-theRed text-white font-tajawal py-2`}
       >
-        ارسال
+        {t("send")}
       </button>
     </form>
   );

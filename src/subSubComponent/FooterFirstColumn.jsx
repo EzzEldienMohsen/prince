@@ -18,16 +18,20 @@ const FooterFirstColumn = ({ data }) => {
     <div className="flex md:w-3/5 lg:w-1/5 flex-col justify-center items-center lg:items-start gap-y-4 md:gap-y-6 lg:gap-y-4 lg:gap-x-10">
       <img src={data?.white_logo} alt="logo" />
       <p className="text-white  font-tajawal font-normal text-center lg:text-start text-sm md:text-lg lg:text-sm">
-{t("mainPageHeroTextAndOthers")}
+        {t('mainPageHeroTextAndOthers')}
       </p>
-      <div className=" flex justify-center items-center lg:justify-start gap-x-8 md:gap-x-4 lg:gap-x-2">
-        {footerSocial.map((link) => {
-          return (
-            <a key={link.id} href={link.href} target="_blank">
+      <div className="flex justify-center items-center lg:justify-start gap-x-8 md:gap-x-4 lg:gap-x-2">
+        {footerSocial.map((link) =>
+          link.href !== '' ? (
+            <a
+              key={link.id}
+              href={link.href}
+              target="_blank"
+            >
               <img src={link.img} alt="social" />
             </a>
-          );
-        })}
+          ) : null
+        )}
       </div>
     </div>
   );
