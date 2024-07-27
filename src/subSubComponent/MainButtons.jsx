@@ -13,12 +13,12 @@ const MainButtons = () => {
    }
   return (
     <div className="flex justify-start items-center gap-x-4 md:gap-x-6 lg:gap-x-8">
-      <button className="bg-theRed text-white font-tajawal flex justify-center items-center gap-x-2 py-5 px-8">
         <a target="_blank" href={data?.homeAbout?.intro_video}>
-          <p>{t('mainPageButtopn')} </p>
+      <button className="bg-theRed text-white font-tajawal flex justify-center items-center gap-x-2 py-5 px-8">
+          <p >{t('mainPageButtopn')} </p>
           <img src={play} alt="play" />
-        </a>
       </button>
+        </a>
       <a href="" target="_blank">
         <img src={src} alt="whatsApp" />
       </a>

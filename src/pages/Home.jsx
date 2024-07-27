@@ -7,7 +7,11 @@ const Home = () => {
   const { data, isLoading } = useGlobalData();
   
   if (isLoading) {
-    return <div>Loading...</div>; // Display a loading indicator while data is being fetched
+    return (
+      <div className='w-full aspect-square flex justify-center items-center'>
+       <span className="loading loading-spinner text-theRed loading-xl"></span>
+      </div>
+    ); // Display a loading indicator while data is being fetched
   }
 
   return (

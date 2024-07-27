@@ -171,15 +171,15 @@ export const theProjectCard = [
 export const expertise = [
   {
     id: nanoid(),
-    title: 'مهارة وخبرة',
+    title: 'mainExpertiseTitle1',
     img: skill,
-    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي الفعال على جميع انواع المباني بخبرة تتجاوز 25 عام ...',
+    text: 'mainPageHeroTextAndOthers',
   },
   {
     id: nanoid(),
-    title: 'تخصصات عدة',
+    title: 'mainExpertiseTitle2',
     img: specialty,
-    text: 'تقدم لكم شركة برنس تصاميم معمارية مميزة وديكورات داخلية فريدة بالإضافة للاشراف الهندسي الفعال على جميع انواع المباني بخبرة تتجاوز 25 عام ...',
+    text: 'mainPageHeroTextAndOthers',
   },
 ];
 

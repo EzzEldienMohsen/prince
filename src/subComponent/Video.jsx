@@ -1,15 +1,11 @@
 import React from 'react';
 import play from '../assets/svg/video/play.svg';
 import { useGlobalData } from '../context/GlobalDataContext';
-import { useGlobalContext } from '../context/GlobalContext';
 
 const Video = () => {
-  const { data, isLoading } = useGlobalData();
+  const { data } = useGlobalData();
 
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
 
  
   const youtubeVideoId = data?.home_about?.hero_video.split('v=')[1];
