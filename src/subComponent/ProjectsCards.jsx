@@ -21,10 +21,12 @@ const data = theData || cardData?.projects?.projects
               {link.description}
             </p>
             {/* The Final Div */}
-            <div className="py-2 mx-2 px-2 border-t-[2px] border-white flex justify-between items-center w-full">
+
+            <div className="py-2 mx-2 px-2  flex flex-col justify-start items-start w-full">
+            <div className="w-11/12 py-[1px] bg-[#E3E3E3] justify-self-center mr-2"></div>
               {/* the date section */}
               <div className="flex justify-between items-center gap-x-1">
-                <p className="text-theDGray font-tajawal font-normal md:text-xs px-2">
+                <p className="text-theDGray font-tajawal font-normal md:text-xs px-2 mt-2">
                   {link.category.name}
                 </p>
               </div>

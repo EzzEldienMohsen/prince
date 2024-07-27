@@ -17,20 +17,13 @@ const SmallCarousel = () => {
               {link.title}
             </h1>
             <p className="text-theDGray font-tajawal font-normal md:text-md px-2 text-start">
-              {link.content}
+              {link.short_content}
             </p>
-            {/* The Final Div */}
-            <div className="py-2 mx-2 px-2 border-t-[2px] border-white flex justify-between items-center w-full">
-              {/* the image name section */}
-              <div className="flex justify-between items-center gap-x-1">
-                <div className="flex flex-col justify-center items-center gap-y-1">
-                  <h1 className="font-tajawal font-normal text-sm text-black px-2">
-                    {link.short_content}
-                  </h1>
-                </div>
-              </div>
+            <div className="py-2 mx-1 px-1    flex flex-col justify-between items-start w-full">
+              <div className="w-11/12 py-[1px] bg-[#E3E3E3] justify-self-center mr-3 "></div>
+
               {/* the date section */}
-              <div className="flex justify-between items-center gap-x-1">
+              <div className="flex justify-between items-center mt-2 gap-x-1">
                 <img src={theDate} alt="date" />
                 <p className="text-theDGray font-tajawal font-extraLight md:text-xs px-2">
                   {link.date}
