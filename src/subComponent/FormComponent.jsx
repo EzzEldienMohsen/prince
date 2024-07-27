@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 const request = async (data) => {
   try {
     const resp = await autoFetch.post('/contact/send', data);
-    console.log(resp);
   } catch (error) {
     console.log(error);
   }

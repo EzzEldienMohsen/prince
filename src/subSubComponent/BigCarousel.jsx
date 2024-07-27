@@ -4,7 +4,6 @@ import { useGlobalData } from '../context/GlobalDataContext';
 
 const BigCarousel = () => {
   const {data} =useGlobalData();
-  console.log(data?.news)
   return (
     <div className="hidden w-4/5 bg-white  md:inline-flex md:carousel md:gap-x-3 lg:gap-x-4 carousel-end ">
       {data?.news?.map((link) => {

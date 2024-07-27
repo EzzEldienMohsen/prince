@@ -3,7 +3,6 @@ import { MainButtons } from '../subSubComponent';
 import { useTranslation } from 'react-i18next';
 const AboutMainInfo = () => {
   const {t} = useTranslation()
-  console.log('About Section Text:', t('aboutSectionText'));
   return (
     <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 md:gap-y-6 lg:gap-y-8">
       <p className="font-tajawal text-theRed text-2xl">{t('about')}</p>
