@@ -13,7 +13,7 @@ const SmallCarousel = () => {
             className="carousel-item w-full flex flex-col bg-theLGray justify-center items-start gap-y-3 "
           >
             <img src={link.image} alt="project" />
-            <h1 className="font-tajawal font-bold text-lg text-black px-2">
+            <h1 className="font-tajawal font-normal text-lg text-black px-2">
               {link.title}
             </h1>
             <p className="text-theDGray font-tajawal font-normal md:text-md px-2 text-start">
@@ -24,7 +24,7 @@ const SmallCarousel = () => {
               {/* the image name section */}
               <div className="flex justify-between items-center gap-x-1">
                 <div className="flex flex-col justify-center items-center gap-y-1">
-                  <h1 className="font-tajawal font-bold text-sm text-black px-2">
+                  <h1 className="font-tajawal font-normal text-sm text-black px-2">
                     {link.short_content}
                   </h1>
                 </div>

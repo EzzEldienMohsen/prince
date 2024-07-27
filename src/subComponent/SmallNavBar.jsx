@@ -25,7 +25,7 @@ const SmallNavBar = () => {
               onClick={() => setSelectedButton(page.id)}
               className={`${
                 page.id === selectedButton
-                  ? 'text-theRed underline decoration-[theRed]'
+                  ? 'text-theRed underline underline-offset-[16px] decoration-[theRed]'
                   : ''
               }`}
             >

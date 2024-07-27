@@ -8,7 +8,7 @@ const BigNavBar = () => {
   const [selectedButton, setSelectedButton] = React.useState(pages[0].id);
   const { t } = useTranslation();
   return (
-    <ul className="hidden lg:flex justify-between items-center gap-x-6 font-tajawal text-xl font-light">
+    <ul className="hidden lg:flex justify-between items-center gap-x-6 font-tajawal text-xl font-normal">
       {pages.map((page) => {
         return (
           <motion.li
@@ -16,7 +16,7 @@ const BigNavBar = () => {
             onClick={() => setSelectedButton(page.id)}
             className={`${
               page.id === selectedButton
-                ? 'text-theRed underline underline-offset-8 decoration-[theRed]'
+                ? 'text-theRed underline underline-offset-[16px] decoration-[theRed]'
                 : ''
             }`}
           >

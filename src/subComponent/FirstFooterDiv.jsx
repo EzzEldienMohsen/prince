@@ -27,7 +27,7 @@ const FirstFooterDiv = ({ data }) => {
         </div>
         <Link
           to="/"
-          className="bg-theDGray text-white font-tajawal px-6 py-4 flex justify-center items-center gap-x-2"
+          className="bg-theDGray text-white font-tajawal px-6 py-4 flex font-normal justify-center items-center gap-x-2"
         >
           <p className="text-sx">{t("call")}</p>
           <img src={phone} alt="phone" />

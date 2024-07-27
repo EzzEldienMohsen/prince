@@ -4,10 +4,12 @@ import { FormRow, FormSelect } from '../subSubComponent';
 import { mainFormOptions } from '../assets';
 import { useGlobalData } from '../context/GlobalDataContext';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
  const w = 'w-[35%] md:w-1/5 ';
 const request = async (data) => {
   try {
     const resp = await autoFetch.post('/contact/send', data);
+    toast.success(resp.data.message)
   } catch (error) {
     console.log(error);
   }
@@ -18,7 +20,7 @@ const FormComponent = () => {
   const [values, setValues] = React.useState({
     name: '',
     phone: '',
-    city: '',
+    city: '1',
   });
   const {data, isLoading} = useGlobalData() 
   const handleChange = (e) => {
@@ -57,7 +59,7 @@ const FormComponent = () => {
       <FormRow
         name="phone"
         label=" "
-        type="tel"
+        type="text"
         value={values.phone}
         placeHolder={t('phoneFormRow')}
         handleChange={handleChange}

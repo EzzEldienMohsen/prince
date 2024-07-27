@@ -26,14 +26,22 @@ const FirstMainCard = () => {
    return <div>Loading...</div>;
  }
   return (
-    <div className="bg-theLGray w-full flex justify-center items-center py-8 gap-x-2 md:gap-x-4 lg:gap-x-10">
+    <div className="bg-theLGray w-full flex just-fy-enenly items-center md:justify-evenly py-8 gap-x-2 md:gap-x-4 lg:gap-x-20">
       {mainFirstCard.map((card)=>{
-        return <div key={card.id} className='flex flex-col justify-center items-center gap-y-2 lg:gap-y-4'>
-            <img src={card.img} alt="image"/>
-            <h1 className='font-tajawal font-semiBold text-xl md:text-2xl  text-black'>{card.number}</h1>
-            <p className='font-tajawal font-light text-black text-center text-sm w-4/5 md:text-lg'>{t(card.key)}</p>
-
-        </div>
+        return (
+          <div
+            key={card.id}
+            className="flex flex-col  justify-center items-center gap-y-2 lg:gap-y-4"
+          >
+            <img src={card.img} alt="image" />
+            <h1 className="font-tajawal font-bold text-2xl md:text-3xl lg:text-5xl text-black">
+              {card.number}
+            </h1>
+            <p className="font-tajawal font-normal w-3/5 md:w-auto text-black text-center text-sm   md:text-xl">
+              {t(card.key)}
+            </p>
+          </div>
+        );
       })}
     </div>
   );

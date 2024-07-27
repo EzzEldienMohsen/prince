@@ -7,7 +7,7 @@ const HeaderButtons = ({data}) => {
     <div className="hidden lg:flex justify-between items-center gap-x-2">
       <button
         onClick={toggleLang}
-        className="avatar rounded-full mx-4 p-2 bg-white text-theRed font-extraLight"
+        className="avatar rounded-full mx-4 p-2 bg-white text-theRed font-normal shadow-lg"
       >
         {isArabic ? 'E N' : 'A R'}
       </button>

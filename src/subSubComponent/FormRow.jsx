@@ -22,7 +22,7 @@ const FormRow = ({  name,
         value={value}
         placeholder={placeHolder}
         onChange={handleChange}
-        className={` py-2   border-2  w-full font-tajawal focus:border-theRed focus:text-theRed border-black text-black`}
+        className={` py-2 px-4  border-2  w-full font-tajawal focus:border-theRed focus:text-theRed border-black text-black`}
       />
     </div>
   );

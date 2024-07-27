@@ -14,25 +14,25 @@ const {data} = useGlobalData();
     {
       id: nanoid(),
       key: 'cardVillaDesign',
-      number: data?.homeAbout?.villa + '+',
+      number: '+' + data?.homeAbout?.villa ,
     },
     {
       id: nanoid(),
       key: 'cardInteriorDesign',
-      number: data?.homeAbout?.indoor + '+',
+      number: '+'+ data?.homeAbout?.indoor ,
     },
   ];
 
   return (
     <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col justify-center items-center relative">
       <img src={src} alt="image" />
-      <div className="absolute gap-y-4 py-8 md:py-6 lg:py-8 -top-24 md:-top-20 left-6 md:left-4 bg-theLGray flex flex-col justify-center items-center w-30 lg:w-40">
+      <div className="absolute gap-y-2 py-8 md:py-2 lg:py-8 -top-24 md:-top-20 left-6 md:left-4 bg-[#FEFEFF] flex flex-col justify-center items-center w-30 lg:w-40">
         <img src={check} alt="check" />
         <h1 className="text-2xl font-tajawal font-normal text-black">
           {data?.homeAbout?.rating}
         </h1>
         <img src={stars} alt="stars" />
-        <p className="text-theDGray font-tajawal text-sm font-extraLight lg:text-lg">
+        <p className="text-theDGray font-tajawal text-sm font-normal lg:text-lg">
           {t('cardHappy')}
         </p>
         <p className="text-black font-tajawal">
@@ -46,7 +46,7 @@ const {data} = useGlobalData();
             className="flex justify-between items-center gap-x-2"
           >
             <h2 className="font-tajawal text-black">{t(link.key)}</h2>
-            <h1 className="text-xl font-tajawal font-normal text-theRed">
+            <h1 className="text-xl md:text-3xl font-tajawal font-bold text-theRed text-center align-text-top">
               {link.number}
             </h1>
           </div>
