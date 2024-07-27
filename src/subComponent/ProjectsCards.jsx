@@ -8,13 +8,13 @@ const ProjectsCards = () => {
         return (
           <div
             key={link.id}
-            className=" w-full md:w-2/5 lg:w-[27%] flex flex-col bg-theLGray justify-center  items-start gap-y-3 "
+            className=" w-full md:w-2/5 lg:w-[27%] flex flex-col bg-white justify-center  items-start gap-y-3 "
           >
             <img src={link.img} alt="proj" className='w-full'/>
             <h1 className="font-tajawal font-bold text-lg text-black px-3">
               {link.title}
             </h1>
-            <p className="text-theDGray font-tajawal   font-extraLight md:text-md px-3 text-start">
+            <p className="text-theDGray font-tajawal   font-light md:text-md px-3 text-start">
               {link.text}
             </p>
             {/* The Final Div */}
