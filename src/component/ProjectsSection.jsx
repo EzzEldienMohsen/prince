@@ -23,7 +23,7 @@ const ProjectsSection = () => {
         {t('mainProjectsTitle')}
       </h1>
       <ProjectsNavBar data={data?.projects} setTheData={setTheData} />
-      <ProjectsCards data={theData} />
+      <ProjectsCards theData={theData} />
     </div>
   );
 }
