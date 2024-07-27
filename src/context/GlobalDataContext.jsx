@@ -38,6 +38,7 @@ const fetchDataWithRetry = async (
       );
       return fetchDataWithRetry(endpoint, key, language, setData, retries - 1);
     } else {
+      // More sophisticated error handling could be added here
       console.error('Error fetching data:', error);
     }
   }
@@ -46,15 +47,19 @@ const fetchDataWithRetry = async (
 export const GlobalDataProvider = ({ children }) => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-const {isArabic} = useGlobalContext();
-const language = isArabic ?"ar":"en";
+  const { isArabic } = useGlobalContext();
+  const language = isArabic ? 'ar' : 'en';
+
   const fetchData = useCallback(async (endpoint, key, language) => {
     setIsLoading(true);
-    await fetchDataWithRetry(endpoint, key, language, setData);
-    setIsLoading(false);
+    try {
+      await fetchDataWithRetry(endpoint, key, language, setData);
+    } finally {
+      setIsLoading(false);
+    }
   }, []);
 
-useEffect(() => {
+  useEffect(() => {
     const endpoints = [
       { url: '/layout', key: 'layout' },
       { url: '/home/about', key: 'homeAbout' },
@@ -64,9 +69,8 @@ useEffect(() => {
       { url: '/home/projects', key: 'projects' },
     ];
 
-    endpoints.forEach(({ url, key }) => fetchData(url, key,language));
-  }, [language]);
-
+    endpoints.forEach(({ url, key }) => fetchData(url, key, language));
+  }, [language, fetchData]);
 
   return (
     <GlobalDataContext.Provider value={{ data, isLoading, fetchData }}>

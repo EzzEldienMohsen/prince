@@ -11,7 +11,7 @@ const Home = () => {
       <div className='w-full aspect-square flex justify-center items-center'>
        <span className="loading loading-spinner text-theRed loading-xl"></span>
       </div>
-    ); // Display a loading indicator while data is being fetched
+    ); 
   }
 
   return (
