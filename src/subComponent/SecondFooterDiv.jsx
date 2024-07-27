@@ -8,11 +8,13 @@ import { footerLinks } from '../assets';
 const SecondFooterDiv = ({data}) => {
   return (
     <div className="w-full lg:w-5/6  px-4 lg:px-0 flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start lg:gap-x-10 ">
-      <FooterFirstColumn data={data}/>
-      <FooterSecondColumn links={data.projects_categories} title="المشاريع السكنية" />
-      <FooterSecondColumn links={footerLinks} title="روابط سريعة" />
-      <ContactFooter data={data}/>
-      
+      <FooterFirstColumn data={data} />
+      <FooterSecondColumn
+        links={data.projects_categories}
+        title="residential"
+      />
+      <FooterSecondColumn links={footerLinks} title="hyperLinks" />
+      <ContactFooter data={data} />
     </div>
   );
 }

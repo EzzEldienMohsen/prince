@@ -3,9 +3,11 @@ import src from '../assets/svg/header/menuButton.svg';
 import { pages } from '../assets';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const SmallNavBar = () => {
   const [selectedButton, setSelectedButton] = React.useState(pages[0].id);
+  const { t } = useTranslation();
 
   return (
     <div className="dropdown dropdown-end lg:hidden">
@@ -27,7 +29,7 @@ const SmallNavBar = () => {
                   : ''
               }`}
             >
-              <Link to={page.to}>{page.text}</Link>
+              <Link to={page.to}>{t(page.key)}</Link>
             </motion.li>
           );
         })}

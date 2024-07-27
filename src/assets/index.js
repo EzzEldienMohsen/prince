@@ -202,49 +202,49 @@ export const mainFirstCard = [
 export const pages = [
   {
     id: nanoid(),
-    text: 'الرئيسية',
+    key: 'main',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'جديد الشركة',
+    key: 'mainLatestBigTitle',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'مشاريعنا',
+    key: 'mainProjects',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'عن الشركة',
+    key:  "about2",
     to: '/about',
   },
 ];
 export const footerLinks = [
   {
     id: nanoid(),
-    text: 'الرئيسية',
+    key: 'main',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'من نحن',
+    key: 'about',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'اخر الاخبار',
+    key: 'latest',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'الاسالة المتكررة',
+    key: 'faqs',
     to: '/',
   },
   {
     id: nanoid(),
-    text: 'المشاريع',
+    key: 'project',
     to: '/',
   },
 ];

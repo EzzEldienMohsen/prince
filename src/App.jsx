@@ -2,16 +2,13 @@ import React, { Suspense } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { AboutPage, Landing } from "./pages"
+import { AboutPage, Landing } from './pages';
 import { GlobalProvider } from './context/GlobalContext';
+import { GlobalDataProvider } from './context/GlobalDataContext';
 
 // loaders
 
-
-
-const Home = React.lazy(() => import("./pages/Home"));
-
-
+const Home = React.lazy(() => import('./pages/Home'));
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -35,7 +32,7 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path:"/about" ,
+        path: '/about',
         element: <AboutPage />,
       },
     ],
@@ -45,10 +42,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-    <GlobalProvider>
-      <RouterProvider router={router} />
-      <ReactQueryDevtools initialIsOpen={false} />
-    </GlobalProvider>
+      <GlobalDataProvider>
+        <GlobalProvider>
+          <RouterProvider router={router} />
+          <ReactQueryDevtools initialIsOpen={false} />
+        </GlobalProvider>
+      </GlobalDataProvider>
     </QueryClientProvider>
   );
 }

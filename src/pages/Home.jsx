@@ -1,35 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Footer, Header } from '../component';
-import { autoFetch } from '../utils';
 import { useGlobalContext } from '../context/GlobalContext';
+import { useGlobalData } from '../context/GlobalDataContext';
 
 const Home = () => {
   const { isArabic } = useGlobalContext();
-  const [data, setData] = useState(null); // State for data
-  const [isLoading, setIsLoading] = useState(true); // State for loading
+  const { data, isLoading, fetchData } = useGlobalData();
   const language = isArabic ? 'ar' : 'en';
 
   useEffect(() => {
-    const fetchLayout = async () => {
-      try {
-        const response = await autoFetch(`/layout`, {
-          headers: {
-            locale: language,
-            Accept: 'application/json',
-          },
-        });
-        const fetchedData = response.data.data;
-        console.log(fetchedData, language);
-        setData(fetchedData); // Update the state with fetched data
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setIsLoading(false); // Set loading to false once the fetch is complete
-      }
-    };
-
-    fetchLayout();
+    fetchData('/layout', 'layout', language);
   }, [language]);
 
   if (isLoading) {
@@ -38,9 +19,9 @@ const Home = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <Header data={data} />
+      <Header data={data.layout} />
       <Outlet />
-      <Footer data={data} />
+      <Footer data={data.layout} />
     </div>
   );
 };
