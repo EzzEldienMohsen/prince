@@ -1,8 +1,7 @@
 import { nanoid } from 'nanoid';
 
 
-import crane from './svg/mainPage/crane.svg';
-import building from './svg/mainPage/building.svg';
+
 import specialty from './svg/mainPage/Speciality.svg';
 import skill from './svg/mainPage/skill.svg';
 import one from './svg/mainPage/carousel1.svg';
@@ -184,20 +183,6 @@ export const expertise = [
   },
 ];
 
-export const mainFirstCard = [
-  {
-    id: nanoid(),
-    img: building,
-    number: '100+',
-    text: 'مشاريع تم انجازها خلال السنوات الخمس الأخيرة',
-  },
-  {
-    id: nanoid(),
-    img: crane,
-    number: '100+',
-    text: 'مشروع قيد الانشاء الآن',
-  },
-];
 
 export const pages = [
   {
