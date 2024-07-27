@@ -6,7 +6,7 @@ const {data:cardData} = useGlobalData()
 const data = theData || cardData?.projects?.projects
   
   return (
-    <div className="flex flex-col justify-center items-center w-full lg:w-4/5  gap-y-6 md:gap-y-4 md:flex-row md:flex-wrap md:justify-evenly lg:justify-between md:gap-x-4">
+    <div className="flex flex-col justify-center items-center w-full lg:w-4/5 bg-theLGray gap-y-8 md:gap-y-4 md:flex-row md:flex-wrap md:justify-evenly lg:justify-between md:gap-x-4">
       {data?.map((link) => {
         return (
           <div
