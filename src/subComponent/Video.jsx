@@ -20,15 +20,14 @@ const Video = () => {
             height="100%"
             src={youtubeEmbedUrl}
             title="YouTube video player"
-           
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full object-cover"
           ></iframe>
         </div>
-        <div className="absolute inset-0 flex justify-center items-center">
+        <div className="absolute top-0 left-0 right-[-20%] bottom-0 flex justify-center items-center">
           <button className="bg-theDGray rounded-full shadow-md">
-            <img src={play} alt="Play" className="w-12 h-12" />
+            <img src={play} alt="Play" className="w-24 h-24" />
           </button>
         </div>
       </div>
