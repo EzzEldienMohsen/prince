@@ -6,12 +6,12 @@ const {data:cardData} = useGlobalData()
 const data = theData || cardData?.projects?.projects
   
   return (
-    <div className="flex flex-col justify-center items-center w-full lg:w-4/5 bg-theLGray gap-y-8 md:gap-y-4 md:flex-row md:flex-wrap md:justify-evenly lg:justify-between md:gap-x-4">
+    <div className="flex flex-col justify-center items-center w-full lg:w-4/5 bg-white gap-y-8 md:gap-y-4 md:flex-row md:flex-wrap md:justify-evenly lg:justify-between md:gap-x-4">
       {data?.map((link) => {
         return (
           <div
             key={link.id}
-            className=" w-full md:w-2/5 lg:w-[27%] flex flex-col bg-white justify-center  items-start gap-y-3 "
+            className=" w-full md:w-2/5 lg:w-[27%] flex flex-col bg-theLGray justify-center  items-start gap-y-3 "
           >
             <img src={link.image} alt="proj" className="w-full" />
             <h1 className="font-tajawal font-bold text-lg text-black px-3">
