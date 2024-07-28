@@ -19,17 +19,12 @@ const ContactFooter = ({data}) => {
         {t('fourthColumnTitle')}
       </h1>
       <div className="flex flex-col text-theLGray md:w-4/5 lg:w-auto justify-center md:gap-x-10  lg:gap-x-0 items-start md:flex-row md:justify-center md:items-center gap-y-4 lg:flex-col lg:justify-items-start lg:items-start">
-        {contactFooter.map((link) => {
-          return (
-            <div
-              key={link.id}
-              className=" flex justify-evenly items-center gap-x-4 "
-            >
-              <img src={link.img} alt="icon" className='w-1/5'/>
-              <p className="text-sm ">{link.text}</p>
-            </div>
-          );
-        })}
+        {contactFooter.map((link) => (
+          <div key={link.id} className="flex items-center gap-x-3">
+            <img src={link.img} alt="icon" className="w-6 h-6" />
+            <p className="text-sm">{link.text}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
