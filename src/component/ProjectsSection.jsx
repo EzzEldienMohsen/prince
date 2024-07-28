@@ -1,12 +1,18 @@
 import React from 'react'
-import { ProjectsCards, ProjectsNavBar } from '../subComponent';
+import { MainProjectsCard,  ProjectsNavBar } from '../subComponent';
 import { useTranslation } from 'react-i18next';
 import { useGlobalData } from '../context/GlobalDataContext';
 
 const ProjectsSection = () => {
   const { data, isLoading } = useGlobalData();
   const {t} = useTranslation()
-  const [theData, setTheData] = React.useState(data?.projects?.projects);
+  const [theData, setTheData] = React.useState(data?.projects?.projects || []);
+  console.log("data is " + data, "theData is " + theData)
+  React.useEffect(() => {
+    if (data?.projects?.projects) {
+      setTheData(data.projects.projects);
+    }
+  }, [data]);
     if (isLoading) {
       return (
         <div className="w-full aspect-square flex justify-center items-center">
@@ -22,8 +28,8 @@ const ProjectsSection = () => {
       <h1 className="font-normal font-tajawal text-black text-xl md:text-3xl">
         {t('mainProjectsTitle')}
       </h1>
-      <ProjectsNavBar data={data?.projects}  />
-      <ProjectsCards theData={theData} />
+      <ProjectsNavBar data={data?.projects} setTheData={setTheData} theTrue={true} />
+      <MainProjectsCard cardData={theData} />
     </div>
   );
 }

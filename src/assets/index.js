@@ -56,7 +56,7 @@ export const pages = [
   {
     id: nanoid(),
     key: 'mainLatestBigTitle',
-    to: '/',
+    to: '/news',
   },
   {
     id: nanoid(),
@@ -116,4 +116,8 @@ export const aboutBreadCrumbs = [
 export const projectsBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'mainProjects', to: '/projects' },
+];
+export const newsBreadCrumbs = [
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  { id: nanoid(), img: '', key: 'mainLatestBigTitle', to: '/projects' },
 ];

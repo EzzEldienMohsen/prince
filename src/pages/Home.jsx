@@ -30,7 +30,7 @@ const Home = () => {
 
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center ">
       <Header data={data.data} />
       <Outlet />
       <Footer data={data.data} />

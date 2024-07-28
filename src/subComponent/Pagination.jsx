@@ -6,7 +6,6 @@ const Pagination = () => {
   console.log(data)
   const currentPage = data.data.current_page;
   const pageCount = data.data.current_page.pages_length;
-; // Assuming you have 10 pages, adjust as needed
 
   const pages = Array.from({ length: pageCount }, (_, index) => index + 1);
   const { search, pathname } = useLocation();
@@ -22,7 +21,7 @@ const Pagination = () => {
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-16 flex px-8 lg:px-16 gap-x-2 w-full justify-end items-center">
+    <div className="mt-16 flex px-8 lg:px-16 gap-x-2 w-full justify-center items-center">
       <button
         className="capitalize font-normal bg-transparent font-tajawal border-none text-[#7C8893]"
         onClick={() => {
