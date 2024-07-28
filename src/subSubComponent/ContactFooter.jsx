@@ -23,9 +23,9 @@ const ContactFooter = ({data}) => {
           return (
             <div
               key={link.id}
-              className=" flex justify-center items-center gap-x-2"
+              className=" flex justify-evenly items-center gap-x-4 "
             >
-              <img src={link.img} alt="icon" />
+              <img src={link.img} alt="icon" className='w-1/5'/>
               <p className="text-sm ">{link.text}</p>
             </div>
           );
