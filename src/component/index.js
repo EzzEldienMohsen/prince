@@ -10,3 +10,5 @@ export { default as TheImageSection } from './TheImageSection';
 export { default as ProjectsSection } from './ProjectsSection';
 export { default as FAQSection } from './FAQSection';
 export { default as TitleComponent } from './TitleComponent';
+export { default as SecondAboutCards } from './SecondAboutCards';
+export { default as AboutInfoSection } from './AboutInfoSection';

@@ -6,7 +6,13 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const SmallNavBar = () => {
-  const [selectedButton, setSelectedButton] = React.useState(pages[0].id);
+  let chosenPage;
+  try {
+    chosenPage = JSON.parse(localStorage.getItem('navPage')) || pages[0].id;
+  } catch (error) {
+    chosenPage = pages[0].id;
+  }
+  const [selectedButton, setSelectedButton] = React.useState(chosenPage);
   const { t } = useTranslation();
 
   return (
@@ -22,7 +28,10 @@ const SmallNavBar = () => {
           return (
             <motion.li
               key={page.id}
-              onClick={() => setSelectedButton(page.id)}
+              onClick={() => {
+                localStorage.setItem('navPage', JSON.stringify(page.id));
+                setSelectedButton(page.id);
+              }}
               className={`${
                 page.id === selectedButton
                   ? 'text-theRed underline underline-offset-[16px] decoration-[theRed]'

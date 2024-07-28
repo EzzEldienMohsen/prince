@@ -6,13 +6,13 @@ const FAQsComponent = () => {
   const { data, isLoading } = useGlobalData();
 
 
-   if (isLoading) {
-     return (
-       <div className="w-full aspect-square flex justify-center items-center">
-         <span className="loading loading-spinner text-theRed loading-xl"></span>
-       </div>
-     );
-   }
+     if (isLoading) {
+       return (
+         <div className="w-full aspect-square flex justify-center items-center">
+           <span className="loading loading-spinner text-theRed loading-xl"></span>
+         </div>
+       );
+     }
   return (
     <div className="flex flex-col justify-start items-start w-full ">
       {data?.faqs?.map((faq) => {

@@ -4,6 +4,8 @@ import building from '../assets/svg/mainPage/building.svg';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 import { useGlobalData } from '../context/GlobalDataContext';
+
+
 const FirstMainCard = () => {
   const {t} = useTranslation()
   const {isLoading,data} = useGlobalData()

@@ -8,6 +8,7 @@ import { GlobalDataProvider } from './context/GlobalDataContext';
 
 // loaders
 import {loader as layoutLoader} from "./pages/Home"
+import {loader as aboutLoader} from "./pages/AboutPage"
 const Home = React.lazy(() => import('./pages/Home'));
 
 export const queryClient = new QueryClient({
@@ -30,7 +31,7 @@ const AppRouter = () => {
           <Home />
         </Suspense>
       ),
-      loader:layoutLoader(queryClient,language),
+      loader: layoutLoader(queryClient, language),
       children: [
         {
           index: true,
@@ -39,7 +40,7 @@ const AppRouter = () => {
         {
           path: '/about',
           element: <AboutPage />,
-          
+          loader: aboutLoader(queryClient, language),
         },
       ],
     },

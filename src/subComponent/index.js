@@ -13,3 +13,6 @@ export { default as Carousel } from './Carousel';
 export { default as ProjectsNavBar } from './ProjectsNavBar';
 export { default as ProjectsCards } from './ProjectsCards';
 export { default as FAQsComponent } from './FAQsComponent';
+export { default as SeconSectionCardDesign } from './SeconSectionCardDesign';
+export { default as AboutInfoImage } from './AboutInfoImage';
+export { default as AboutInfoContent } from './AboutInfoContent';

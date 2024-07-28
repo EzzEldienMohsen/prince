@@ -3,28 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
-const pages = [
-  {
-    id: nanoid(),
-    text: 'كل المشاريع',
-    to: '/',
-  },
-  {
-    id: nanoid(),
-    text: 'فلل سكنية',
-    to: '/',
-  },
-  {
-    id: nanoid(),
-    text: 'مساجد',
-    to: '/',
-  },
-  {
-    id: nanoid(),
-    text: 'مشاريع كبرى',
-    to: '/',
-  },
-];
+
 const ProjectsNavBar = ({data,setTheData}) => {
       const [selectedButton, setSelectedButton] = React.useState(0);
 const {t} = useTranslation();

@@ -1,16 +1,13 @@
 import { nanoid } from 'nanoid';
+import breadCrumpImg from '../assets/svg/secondaryPages/titleVector.svg';
 
 
 
 import specialty from './svg/mainPage/Speciality.svg';
 import skill from './svg/mainPage/skill.svg';
-import one from './svg/mainPage/carousel1.svg';
-import two from './svg/mainPage/carousel2.svg';
-import three from './svg/mainPage/carousel3.svg';
-import four from './svg/mainPage/proj1.svg';
-import five from './svg/mainPage/proj2.svg';
-import six from './svg/mainPage/proj3.svg';
-import eng from './svg/mainPage/eng.svg';
+
+import vision from "../assets/svg/secondaryPages/vision.svg"
+import message from "../assets/svg/secondaryPages/message.svg"
 
 export const theFAQ = [
   { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
@@ -32,6 +29,20 @@ export const expertise = [
     title: 'mainExpertiseTitle2',
     img: specialty,
     text: 'mainPageHeroTextAndOthers',
+  },
+];
+export const theVision = [
+  {
+    id: nanoid(),
+    title: 'secondAboutCardTitle2',
+    img: vision,
+    text: 'secondAboutCardText',
+  },
+  {
+    id: nanoid(),
+    title: 'secondAboutCardTitle1',
+    img: message,
+    text: 'secondAboutCardText',
   },
 ];
 
@@ -94,4 +105,12 @@ export const mainFormOptions = [
   { value: 'dubai', label: 'دبي' },
   { value: 'abu-dhabi', label: 'أبو ظبي' },
   { value: 'sharjah', label: 'الشارقة' },
+];
+
+
+export const aboutBreadCrumbs = [
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  { id: nanoid(), img: breadCrumpImg, key: 'about2', to: '/' },
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  { id: nanoid(), img: '', key: 'about2', to: '/' },
 ];

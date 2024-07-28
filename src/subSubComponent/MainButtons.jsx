@@ -9,7 +9,11 @@ const MainButtons = () => {
 
 
    if (isLoading) {
-     return <div>Loading...</div>;
+     return (
+       <div className="w-full aspect-square flex justify-center items-center">
+         <span className="loading loading-spinner text-theRed loading-xl"></span>
+       </div>
+     );
    }
   return (
     <div className="flex justify-start items-center gap-x-4">
