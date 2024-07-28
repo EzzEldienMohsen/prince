@@ -121,3 +121,13 @@ export const newsBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'mainLatestBigTitle', to: '/projects' },
 ];
+export const singleNewsBreadCrumbs = [
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  {
+    id: nanoid(),
+    img: breadCrumpImg,
+    key: 'mainLatestBigTitle',
+    to: '/projects',
+  },
+  { id: nanoid(), img: '', key: 'SingleNewsTitle', to: '/projects' },
+];

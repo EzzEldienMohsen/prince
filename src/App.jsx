@@ -8,6 +8,7 @@ import {
   ProjectsPage,
   ProjectsCategorizedPage,
   NewsPage,
+  SingleNewsPage,
 } from './pages';
 import { GlobalProvider, useGlobalContext } from './context/GlobalContext';
 import { GlobalDataProvider } from './context/GlobalDataContext';
@@ -18,6 +19,7 @@ import {loader as aboutLoader} from "./pages/AboutPage"
 import {loader as projectsLoader} from "./pages/ProjectsPage"
 import  {loader as projectsCatLoader} from "./pages/ProjectsCategorizedPage"
 import  {loader as newsLoader} from "./pages/NewsPage"
+import  {loader as singleNewsLoader} from "./pages/SingleNewsPage"
 const Home = React.lazy(() => import('./pages/Home'));
 
 export const queryClient = new QueryClient({
@@ -60,6 +62,11 @@ const AppRouter = () => {
           path: '/news',
           element: <NewsPage />,
           loader: newsLoader(queryClient, language),
+        },
+        {
+          path: '/news/:id',
+          element: <SingleNewsPage />,
+          loader: singleNewsLoader(queryClient, language),
         },
         {
           path: '/projects/category/:cat',

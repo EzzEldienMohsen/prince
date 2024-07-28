@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ProjectsCards = ({ theData }) => {
+  console.log(theData)
   return (
     <div className="flex flex-col mt-4 md:mt-0 justify-center items-center w-full lg:w-4/5 bg-white gap-y-8 md:gap-y-4 md:grid md:grid-cols-2 md:justify-evenly lg:grid-cols-3 md:gap-x-10 ">
       {theData.map((link) => {

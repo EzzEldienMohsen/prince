@@ -38,7 +38,7 @@ const ProjectsCategorizedPage = () => {
     <div className="w-full flex justify-center flex-col items-center gap-y-20">
       <TitleComponent title="projectsPageTitle" arrows={projectsBreadCrumbs} />
       <ProjectsNavBar data={data.data} />
-      <ProjectsCards theData={data.projects} />
+      <ProjectsCards theData={data.data.projects} />
       <Pagination />
     </div>
   );

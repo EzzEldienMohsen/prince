@@ -12,3 +12,4 @@ export { default as FAQSection } from './FAQSection';
 export { default as TitleComponent } from './TitleComponent';
 export { default as SecondAboutCards } from './SecondAboutCards';
 export { default as AboutInfoSection } from './AboutInfoSection';
+export { default as SingleNewsContent } from './SingleNewsContent';
