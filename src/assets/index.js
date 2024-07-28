@@ -61,7 +61,7 @@ export const pages = [
   {
     id: nanoid(),
     key: 'mainProjects',
-    to: '/',
+    to: '/projects',
   },
   {
     id: nanoid(),
@@ -93,7 +93,7 @@ export const footerLinks = [
   {
     id: nanoid(),
     key: 'project',
-    to: '/',
+    to: '/projects',
   },
 ];
 
@@ -110,7 +110,10 @@ export const mainFormOptions = [
 
 export const aboutBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
-  { id: nanoid(), img: breadCrumpImg, key: 'about2', to: '/' },
+  { id: nanoid(), img: "", key: 'about2', to: '/about' },
+
+];
+export const projectsBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
-  { id: nanoid(), img: '', key: 'about2', to: '/' },
+  { id: nanoid(), img: '', key: 'mainProjects', to: '/projects' },
 ];

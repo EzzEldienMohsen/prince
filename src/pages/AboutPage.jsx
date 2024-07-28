@@ -6,7 +6,7 @@ import { aboutBreadCrumbs } from '../assets';
 
 
 
-const layoutQuery = (language) => {
+const aboutQuery = (language) => {
   return {
     queryKey: ['about', language],
     queryFn: () =>
@@ -20,7 +20,7 @@ const layoutQuery = (language) => {
 };
 
 export const loader = (queryClient, language) => async () => {
-  const data = await queryClient.ensureQueryData(layoutQuery(language));
+  const data = await queryClient.ensureQueryData(aboutQuery(language));
   return data;
 };
 

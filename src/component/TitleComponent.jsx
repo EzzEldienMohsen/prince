@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../context/GlobalContext';
 
 const TitleComponent = ({ title, arrows }) => {
-  console.log(arrows);
   const { isArabic } = useGlobalContext();
   const { t } = useTranslation();
   return (

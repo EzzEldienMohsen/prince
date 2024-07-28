@@ -2,13 +2,20 @@ import React, { Suspense } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { AboutPage, Landing } from './pages';
+import {
+  AboutPage,
+  Landing,
+  ProjectsPage,
+  ProjectsCategorizedPage,
+} from './pages';
 import { GlobalProvider, useGlobalContext } from './context/GlobalContext';
 import { GlobalDataProvider } from './context/GlobalDataContext';
 
 // loaders
 import {loader as layoutLoader} from "./pages/Home"
 import {loader as aboutLoader} from "./pages/AboutPage"
+import {loader as projectsLoader} from "./pages/ProjectsPage"
+import  {loader as projectsCatLoader} from "./pages/ProjectsCategorizedPage"
 const Home = React.lazy(() => import('./pages/Home'));
 
 export const queryClient = new QueryClient({
@@ -41,6 +48,16 @@ const AppRouter = () => {
           path: '/about',
           element: <AboutPage />,
           loader: aboutLoader(queryClient, language),
+        },
+        {
+          path: '/projects',
+          element: <ProjectsPage />,
+          loader: projectsLoader(queryClient, language),
+        },
+        {
+          path: '/projects/category/:cat',
+          element: <ProjectsCategorizedPage />,
+          loader: projectsCatLoader(queryClient, language),
         },
       ],
     },
