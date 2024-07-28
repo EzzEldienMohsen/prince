@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       <h1 className="font-normal font-tajawal text-black text-xl md:text-3xl">
         {t('mainProjectsTitle')}
       </h1>
-      <ProjectsNavBar data={data?.projects} setTheData={setTheData} />
+      <ProjectsNavBar data={data?.projects}  />
       <ProjectsCards theData={theData} />
     </div>
   );
