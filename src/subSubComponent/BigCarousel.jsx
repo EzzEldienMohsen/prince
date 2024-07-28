@@ -16,7 +16,7 @@ const BigCarousel = () => {
             <h1 className="font-tajawal font-normal text-lg text-black px-2">
               {link.title}
             </h1>
-            <p className="text-theDGray font-tajawal font-normal md:text-md px-2 text-start">
+            <p className="text-[#7C8893] font-tajawal font-normal md:text-md px-2 text-start">
               {link.short_content}
             </p>
             {/* The Final Div */}

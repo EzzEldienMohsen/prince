@@ -16,7 +16,7 @@ const SmallCarousel = () => {
             <h1 className="font-tajawal font-normal text-lg text-black px-2">
               {link.title}
             </h1>
-            <p className="text-theDGray font-tajawal font-normal md:text-md px-2 text-start">
+            <p className="text-[#7C8893] font-tajawal font-normal md:text-md px-2 text-start">
               {link.short_content}
             </p>
             <div className="py-2 mx-1 px-1    flex flex-col justify-between items-start w-full">

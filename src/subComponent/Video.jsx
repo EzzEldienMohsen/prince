@@ -12,7 +12,7 @@ const Video = () => {
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}`;
 
   return (
-    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl md:w-2/5 lg::w-1/2 h-[280px] p-4">
+    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl md:w-2/5 lg::w-1/2 h-[350px] p-4">
       <div className="relative w-full h-full">
         <div className="absolute top-0 left-0 right-[-20%] bottom-0">
           <iframe

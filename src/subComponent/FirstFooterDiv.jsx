@@ -18,7 +18,7 @@ const FirstFooterDiv = ({ data }) => {
               <img src={src} alt="whatsApp" />
             </a>
           </div>
-          <div className="bg-[#29A71A] text-white font-tajawal px-6 py-4 flex justify-center items-center gap-x-2">
+          <div className="bg-[#29A71A] text-white font-tajawal px-4 py-4 flex justify-center items-center gap-x-2">
             <p className="text-xs"> {`${data.whatsapp_1} +`}</p>
             <a href={`https://wa.me/${data.whatsapp_1}`} target="_blank">
               <img src={src} alt="whatsApp" />

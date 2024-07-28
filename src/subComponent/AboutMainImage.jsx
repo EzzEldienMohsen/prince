@@ -24,7 +24,7 @@ const {data} = useGlobalData();
   ];
 
   return (
-    <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col justify-center items-center relative">
+    <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col justify-center items-center relative lg:h-[450px]">
       <img src={src} alt="image" />
       <div className="absolute gap-y-2 py-8 md:py-2 lg:py-8 -top-24 md:-top-20 left-6 md:left-4 bg-[#FEFEFF] flex flex-col justify-center items-center w-30 lg:w-40">
         <img src={check} alt="check" />

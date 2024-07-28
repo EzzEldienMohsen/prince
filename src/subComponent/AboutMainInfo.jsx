@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next';
 const AboutMainInfo = () => {
   const {t} = useTranslation()
   return (
-    <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 md:gap-y-6 lg:gap-y-8">
+    <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 ">
       <p className="font-tajawal text-theRed text-2xl">{t('about')}</p>
-      <h1 className="text-black font-tajawal font-normal text-2xl md:text-5xl lg:text-3xl">
+      <h1 className="text-black font-tajawal font-normal text-2xl md:text-3xl lg:text-2xl">
         {t('mainPageTitle')}
       </h1>
 
-      <p className="text-theDGray font-tajawal font-normal md:text-2xl">
+      <p className="text-theDGray font-tajawal font-normal md:text-md">
         {t('aboutSectionText')}
       </p>
       <MainButtons />
