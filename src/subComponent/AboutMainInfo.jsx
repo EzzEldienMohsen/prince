@@ -1,7 +1,7 @@
 import React from 'react'
 import { MainButtons } from '../subSubComponent';
 import { useTranslation } from 'react-i18next';
-const AboutMainInfo = ({textKey}) => {
+const AboutMainInfo = ({textKey,isTrue}) => {
   const {t} = useTranslation()
   return (
     <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 ">
@@ -13,7 +13,7 @@ const AboutMainInfo = ({textKey}) => {
       <p className="text-[#7C8893] font-tajawal font-normal md:text-sm">
         {t(textKey)}
       </p>
-      <MainButtons />
+      {isTrue? <MainButtons /> : null}
     </div>
   );
 }

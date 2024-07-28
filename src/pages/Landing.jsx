@@ -17,7 +17,7 @@ const Landing = () => {
       <MainHero />
       <FormCard />
       <FirstMainCard />
-      <AboutMain textKey="aboutSectionText" />
+      <AboutMain textKey="aboutSectionText" isTrue={true} />
       <SecondMainCard  />
       <CarouselSection />
       <TheImageSection />
