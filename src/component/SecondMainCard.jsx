@@ -6,7 +6,7 @@ import { SeconSectionCardDesign } from '../subComponent';
 const SecondMainCard = () => {
   const {t} = useTranslation()
   return (
-    <div className="flex flex-col w-full bg-theLGray justify-center px-8 lg:px-16 my-16 py-20 items-center gap-y-6 lg:gap-y-6">
+    <div className="flex flex-col w-full bg-theLGray h-[788px] md:h-[990px] lg:h-[740px] justify-center px-8 lg:px-16 my-16 py-20 items-center gap-y-6 lg:gap-y-6">
       <h1 className="text-theRed text-xl md:text-3xl font-tajawal font-extraBold">
         {t('mainSpecialTitle')}
       </h1>
