@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const SeconSectionCardDesign = ({card}) => {
   const {t} =useTranslation()
   return (
-    <div className="flex flex-col gap-y-4 lg:gap-y-0 justify-center items-center lg:mt-14  lg:flex-row lg:justify-evenly lg lg:gap-x-10  py-8">
+    <div className="flex flex-col gap-y-4 lg:gap-y-0 justify-center items-center lg:mt-8  lg:flex-row lg:justify-evenly lg lg:gap-x-10  py-8">
       {card.map((link) => {
         return (
           <div
