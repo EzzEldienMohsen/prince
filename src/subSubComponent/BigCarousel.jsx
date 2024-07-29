@@ -32,7 +32,7 @@ const BigCarousel = () => {
               {/* the date section */}
               <div className="flex justify-between items-center  mt-2 gap-x-1">
                 <img src={theDate} alt="eng" />
-                <p className="text-theDGray font-tajawal font-normal md:text-xs px-2">
+                <p className="text-theFontColor font-tajawal font-normal md:text-xs px-2">
                   {link.date}
                 </p>
               </div>
