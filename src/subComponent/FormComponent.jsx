@@ -1,12 +1,11 @@
 import React from 'react';
 import { autoFetch } from '../utils';
 import { FormRow, FormSelect } from '../subSubComponent';
-import { mainFormOptions } from '../assets';
 import { useGlobalData } from '../context/GlobalDataContext';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
- const w = 'w-[35%] md:w-1/5 ';
- const ws = 'w-[18%] md:w-[10%] ';
+ const w = 'w-[130px] md:w-[160px] lg:w-[22%]  ';
+ const ws = 'w-[83.57px] md:w-[87px] lg:w-[105px] ';
 const request = async (data) => {
   try {
     const resp = await autoFetch.post('/contact/send', data);
@@ -46,7 +45,7 @@ const FormComponent = () => {
     <form
       method="post"
       onSubmit={onSubmit}
-      className="flex justify-evenly w-full items-center flex-wrap gap-x-2 gap-y-4"
+      className="flex justify-start w-full px-2 md:px-9 lg:px-36 items-center flex-wrap gap-x-[10px] lg:gap-x-[44px] gap-y-3"
     >
       <FormRow
         name="name"
