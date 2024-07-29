@@ -10,7 +10,7 @@ const SecondMainCard = () => {
       <h1 className="text-theRed text-xl md:text-3xl font-tajawal font-extraBold">
         {t('mainSpecialTitle')}
       </h1>
-      <p className="text-[#7C8893] w-4/5 font-tajawal font-extraLight md:text-2xl text-center">
+      <p className="text-[#7C8893] w-4/5 font-tajawal font-normal md:text-2xl text-center">
         {t('mainPageHeroTextAndOthers')}
       </p>
       <SeconSectionCardDesign card={expertise} />

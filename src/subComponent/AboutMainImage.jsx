@@ -28,7 +28,7 @@ const {data} = useGlobalData();
       <img src={src} alt="image"/>
       <div className="absolute gap-y-2 py-8 md:py-2 lg:py-8 -top-24 md:-top-20 left-6 md:left-8 bg-[#FEFEFF] flex flex-col justify-center items-center w-30 lg:w-32">
         <img src={check} alt="check" />
-        <h1 className="text-2xl font-tajawal font-normal text-theFontColor">
+        <h1 className="text-4xl font-tajawal font-normal text-theFontColor">
           {data?.homeAbout?.rating}
         </h1>
         <img src={stars} alt="stars" />
@@ -39,7 +39,7 @@ const {data} = useGlobalData();
           <span>{data?.homeAbout?.reviews}</span>+<span> {t('Reviews')}</span>
         </p>
       </div>
-      <div className="absolute bottom-0 right-0 py-4 w-3/4 gap-x-4 bg-theLGray px-4 flex justify-evenly items-center">
+      <div className="absolute bottom-0 right-0 py-4 w-3/4 gap-x-4 bg-white px-4 flex justify-evenly items-center">
         {bottom.map((link) => (
           <div
             key={link.id}

@@ -15,7 +15,7 @@ const SmallCarousel = () => {
             <ImageWithFallback
               src={link.image}
               alt="proj"
-              className="w-full h-[180px] aspect-auto"
+              className="w-full aspect-auto"
             />
             <h1 className="font-tajawal font-normal text-lg text-theFontColor px-2">
               {link.title}

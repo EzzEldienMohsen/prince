@@ -4,7 +4,7 @@ import { useLoaderData, useLocation, useNavigate } from 'react-router-dom';
 const Pagination = () => {
   const { data } = useLoaderData();
   const currentPage = data.data.current_page;
-  const pageCount = data.data.current_page.pages_length;
+  const pageCount = data.data.pages_length; // corrected from current_page.pages_length to pages_length
 
   const pages = Array.from({ length: pageCount }, (_, index) => index + 1);
   const { search, pathname } = useLocation();
@@ -27,28 +27,28 @@ const Pagination = () => {
           const prevPage = currentPage - 1;
           handlePageChange(prevPage < 1 ? pageCount : prevPage);
         }}
+        disabled={pageCount <= 1}
       >
         {t('prev')}
       </button>
-      {pages.map((pn) => {
-        return (
-          <button
-            key={pn}
-            onClick={() => handlePageChange(pn)}
-            className={`btn btn-xs  sm:btn-md border-none ${
-              pn == currentPage ? 'bg-theRed text-white' : 'bg-transparent'
-            }`}
-          >
-            {pn}
-          </button>
-        );
-      })}
+      {pages.map((pn) => (
+        <button
+          key={pn}
+          onClick={() => handlePageChange(pn)}
+          className={`btn btn-xs sm:btn-md border-none ${
+            pn === currentPage ? 'bg-theRed text-white' : 'bg-transparent'
+          }`}
+        >
+          {pn}
+        </button>
+      ))}
       <button
         className="capitalize font-normal font-tajawal bg-transparent border-none"
         onClick={() => {
           const nextPage = currentPage + 1;
           handlePageChange(nextPage > pageCount ? 1 : nextPage);
         }}
+        disabled={pageCount <= 1}
       >
         {t('next')}
       </button>
