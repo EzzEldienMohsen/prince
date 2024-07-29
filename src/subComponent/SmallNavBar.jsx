@@ -16,7 +16,7 @@ const SmallNavBar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content menu bg-base-100 rounded-box z-[1] w-[85vw] p-2 shadow"
+        className="dropdown-content menu bg-base-100 rounded-box z-20 w-[85vw] p-2 shadow"
       >
         {pages.map((page) => {
                   const isSelected = page.to === pathname;
