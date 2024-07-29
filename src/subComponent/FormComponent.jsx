@@ -45,7 +45,7 @@ const FormComponent = () => {
     <form
       method="post"
       onSubmit={onSubmit}
-      className="flex justify-start w-full px-2 md:px-9 lg:px-36 items-center flex-wrap gap-x-[10px] lg:gap-x-[44px] gap-y-3"
+      className="flex justify-start  lg:justify-between w-full px-2 md:px-9 lg:px-36 items-center flex-wrap gap-x-[10px]  gap-y-3"
     >
       <FormRow
         name="name"

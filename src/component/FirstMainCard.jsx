@@ -28,7 +28,7 @@ const FirstMainCard = () => {
    return <div>Loading...</div>;
  }
   return (
-    <div className="bg-theLGray px-8 lg:px-16 w-full flex justify-center items-center  py-8 gap-x-2 md:gap-x-4 lg:gap-x-10">
+    <div className="bg-theLGray px-8 lg:px-16 w-full flex justify-center items-center   md:gap-x-32 lg:gap-x-48 h-[184px] md:h-[240px] lg:h-[400px]">
       {mainFirstCard.map((card,index)=>{
         return (
           <div
@@ -39,7 +39,7 @@ const FirstMainCard = () => {
             <h1 className="font-tajawal font-bold text-2xl md:text-3xl lg:text-5xl text-theFontColor">
               {card.number}
             </h1>
-            <p className={`font-tajawal font-normal ${index ===0 ?"w-4/5":""}  text-theFontColor align-text-top text-center text-sm   md:text-xl`}>
+            <p className={`font-tajawal font-normal ${index ===0 ?"w-4/5":""}  text-theFontColor align-text-top text-center text-xs   md:text-xl`}>
               {t(card.key)}
             </p>
           </div>
