@@ -1,21 +1,13 @@
 import { nanoid } from 'nanoid';
 import breadCrumpImg from '../assets/svg/secondaryPages/titleVector.svg';
 
-
-
 import specialty from './svg/mainPage/Speciality.svg';
 import skill from './svg/mainPage/skill.svg';
 
 import vision from "../assets/svg/secondaryPages/vision.svg"
 import message from "../assets/svg/secondaryPages/message.svg"
 
-export const theFAQ = [
-  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
-  { id: nanoid(), text: 'كيف يتم الاتفاق على المشروعات الكبرى في شركة برنس؟' },
-  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
-  { id: nanoid(), text: 'كيف يتم الاتفاق على المشروعات الكبرى في شركة برنس؟' },
-  { id: nanoid(), text: 'ما أهم مميزات شركة برنس؟' },
-];
+
 
 export const expertise = [
   {
@@ -78,18 +70,14 @@ export const footerLinks = [
   {
     id: nanoid(),
     key: 'about',
-    to: '/',
+    to: '/about',
   },
   {
     id: nanoid(),
     key: 'latest',
-    to: '/',
+    to: '/news',
   },
-  {
-    id: nanoid(),
-    key: 'faqs',
-    to: '/',
-  },
+ 
   {
     id: nanoid(),
     key: 'project',

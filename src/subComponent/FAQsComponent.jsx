@@ -1,5 +1,4 @@
 import React from 'react'
-import { theFAQ } from '../assets';
 import { useGlobalData } from '../context/GlobalDataContext';
 
 const FAQsComponent = () => {

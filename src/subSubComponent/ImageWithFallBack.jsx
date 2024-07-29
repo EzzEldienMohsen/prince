@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import errorGuard from '../assets/svg/mainPage/carousel1.svg';
+import errorGuard from '../assets/svg/errorGuard/error.svg';
 
 const ImageWithFallback = ({ src, alt, className }) => {
   const [imgSrc, setImgSrc] = useState(src);
