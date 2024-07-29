@@ -4,7 +4,7 @@ import { FormRow, FormSelect } from '../subSubComponent';
 import { useGlobalData } from '../context/GlobalDataContext';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
- const w = 'w-[130px] md:w-[160px] lg:w-[22%]  ';
+ const w = 'w-[130px] md:w-[160px] lg:w-[26%]  ';
  const ws = 'w-[83.57px] md:w-[87px] lg:w-[105px] ';
 const request = async (data) => {
   try {
@@ -45,7 +45,7 @@ const FormComponent = () => {
     <form
       method="post"
       onSubmit={onSubmit}
-      className="flex justify-start  lg:justify-between w-full px-2 md:px-9 lg:px-36 items-center flex-wrap gap-x-[10px]  gap-y-3"
+      className="flex justify-start  lg:justify-between w-full px-2 md:px-9 lg:px-12 items-center flex-wrap gap-x-[10px]  gap-y-3"
     >
       <FormRow
         name="name"
