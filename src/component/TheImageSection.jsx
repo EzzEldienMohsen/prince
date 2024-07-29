@@ -9,7 +9,7 @@ const TheImageSection = () => {
   return (
     <div className="flex flex-col my-16  justify-center  items-center md:flex-row md:justify-between w-full relative gap-y-8 md:gap-y-0 pt-8 md:py-8 ">
       <div className={`absolute top-0 ${isArabic?"right-0":"left-0"} w-full md:w-11/12 lg:w-3/4 h-full bg-theRed -z-10 `}></div>
-      <h1 className="text-white text-xl px-8 lg:px-16 md:text-3xl lg:text-4xl font-tajawal font-normal text-center md:text-start">
+      <h1 className="text-white text-xl px-8 lg:px-16 md:text-3xl lg:text-4xl font-tajawal font-bold text-center md:text-start">
         {t('mainSepartor')}
       </h1>
       <img

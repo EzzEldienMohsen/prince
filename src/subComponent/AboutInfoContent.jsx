@@ -11,7 +11,7 @@ const AboutInfoContent = ({data}) => {
         <p className="font-tajawal text-theRed text-2xl">
           {t('aboutSecondSectionTitle')}
         </p>
-        <h1 className="text-black font-tajawal font-medium text-2xl md:text-3xl ">
+        <h1 className="text-theFontColor font-tajawal font-medium text-2xl md:text-3xl ">
           {t('aboutSecondSectionBigTitle')}
         </h1>
 

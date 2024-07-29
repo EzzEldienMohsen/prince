@@ -31,7 +31,6 @@ export const loader =
 
 const SingleNewsPage = () => {
         const { data } = useLoaderData();
-        console.log(data);
   return (
     <div className="w-full flex justify-center flex-col items-center gap-y-20">
       <TitleComponent title="SingleNewsTitle" arrows={singleNewsBreadCrumbs} />

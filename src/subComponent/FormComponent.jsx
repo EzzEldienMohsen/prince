@@ -6,6 +6,7 @@ import { useGlobalData } from '../context/GlobalDataContext';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
  const w = 'w-[35%] md:w-1/5 ';
+ const ws = 'w-[18%] md:w-[10%] ';
 const request = async (data) => {
   try {
     const resp = await autoFetch.post('/contact/send', data);
@@ -75,7 +76,7 @@ const FormComponent = () => {
       />
       <button
         type="submit"
-        className={`${w} bg-theRed text-white font-tajawal py-2`}
+        className={`${ws} bg-theRed text-white font-tajawal py-2 px-2`}
       >
         {t("send")}
       </button>

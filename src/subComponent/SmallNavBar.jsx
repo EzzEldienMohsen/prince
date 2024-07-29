@@ -1,19 +1,13 @@
 import React from 'react';
 import src from '../assets/svg/header/menuButton.svg';
 import { pages } from '../assets';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const SmallNavBar = () => {
-  let chosenPage;
-  try {
-    chosenPage = JSON.parse(localStorage.getItem('navPage')) || pages[0].id;
-  } catch (error) {
-    chosenPage = pages[0].id;
-  }
-  const [selectedButton, setSelectedButton] = React.useState(chosenPage);
   const { t } = useTranslation();
+  const { pathname } = useLocation();
 
   return (
     <div className="dropdown dropdown-end lg:hidden">
@@ -25,15 +19,13 @@ const SmallNavBar = () => {
         className="dropdown-content menu bg-base-100 rounded-box z-[1] w-[85vw] p-2 shadow"
       >
         {pages.map((page) => {
+                  const isSelected = page.to === pathname;
+
           return (
             <motion.li
               key={page.id}
-              onClick={() => {
-                localStorage.setItem('navPage', JSON.stringify(page.id));
-                setSelectedButton(page.id);
-              }}
               className={`${
-                page.id === selectedButton
+                isSelected
                   ? 'text-theRed underline underline-offset-[16px] decoration-[theRed]'
                   : ''
               }`}

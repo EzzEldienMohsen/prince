@@ -7,7 +7,6 @@ const ProjectsSection = () => {
   const { data, isLoading } = useGlobalData();
   const {t} = useTranslation()
   const [theData, setTheData] = React.useState(data?.projects?.projects || []);
-  console.log("data is " + data, "theData is " + theData)
   React.useEffect(() => {
     if (data?.projects?.projects) {
       setTheData(data.projects.projects);
@@ -21,17 +20,21 @@ const ProjectsSection = () => {
       );
     }
     return (
-    <div className="w-full flex flex-col justify-center items-center px-8 lg:px-16 my-16 gap-y-6 md:gap-y-8 lg:gap-y-12 text-center">
-      <p className="font-tajawal font-normal text-theRed text-lg md:text-2xl">
-        {t('mainProjects')}
-      </p>
-      <h1 className="font-normal font-tajawal text-black text-xl md:text-3xl">
-        {t('mainProjectsTitle')}
-      </h1>
-      <ProjectsNavBar data={data?.projects} setTheData={setTheData} theTrue={true} />
-      <MainProjectsCard cardData={theData} />
-    </div>
-  );
+      <div className="w-full flex flex-col justify-center items-center px-8 lg:px-16 my-16 gap-y-6 md:gap-y-8 lg:gap-y-12 text-center">
+        <p className="font-tajawal font-normal text-theRed text-lg md:text-2xl">
+          {t('mainProjects')}
+        </p>
+        <h1 className="font-semiBold font-tajawal text-theFontColor text-xl md:text-3xl">
+          {t('mainProjectsTitle')}
+        </h1>
+        <ProjectsNavBar
+          data={data?.projects}
+          setTheData={setTheData}
+          theTrue={true}
+        />
+        <MainProjectsCard cardData={theData} />
+      </div>
+    );
 }
 
 export default ProjectsSection

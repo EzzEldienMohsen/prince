@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 const MainHeroInfo = () => {
   const {t} = useTranslation()
   return (
-    <div className="w-full mt-6 lg:mt-0 md:w-1/2 flex flex-col justify-center items-start gap-y-4 md:gap-y-6 lg:gap-y-8">
+    <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 ">
       <p className="font-tajawal text-theRed">{t('mainPageHeroFirstLine')}</p>
-      <h1 className="text-black font-tajawal font-extraBold text-2xl md:text-4xl ">
+      <h1 className="text-theFontColor font-tajawal font-extraBold text-2xl md:text-2xl ">
         {t('mainPageTitle')}
       </h1>
-      <h3 className="text-theRed font-tajawal font-normal text-xl md:text-3xl lg:5xl">
+      <h3 className="text-theRed font-tajawal font-normal text-xl md:text-2xl lg:3xl">
         {t('mainPageHeroSecondRedLine')}
       </h3>
-      <p className="text-theDGray w-full font-tajawal font-normal md:text-2xl">
+      <p className="text-[#7C8893] w-full font-tajawal font-normal md:text-xl">
         {t('mainPageHeroTextAndOthers')}{' '}
       </p>
       <MainButtons />

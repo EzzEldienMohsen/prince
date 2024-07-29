@@ -10,7 +10,7 @@ const FAQSection = () => {
         <p className="font-tajawal font-normal text-theRed text-lg md:text-2xl">
           FAQs
         </p>
-        <h1 className="font-normal font-tajawal text-black text-xl md:text-3xl">
+        <h1 className="font-semiBold font-tajawal text-theFontColor text-xl md:text-3xl">
           {t('faqs')}
         </h1>
         <FAQsComponent />

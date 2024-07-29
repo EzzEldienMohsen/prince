@@ -13,7 +13,7 @@ const FormSelect = ({ name, label, value, handleChange, options, w }) => {
         id={name}
         value={value}
         onChange={handleChange}
-        className={`py-2 px-4 border-2 w-full font-tajawal focus:border-theRed focus:text-theRed border-black text-black`}
+        className={`py-2 px-4 border-[1px] w-full font-tajawal focus:border-theRed focus:text-theRed border-[#7C8893] text-theFontColor`}
       >
         {options?.map((option) => (
           <option key={option.id} value={option.id}>

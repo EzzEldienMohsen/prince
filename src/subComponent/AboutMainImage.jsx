@@ -24,28 +24,28 @@ const {data} = useGlobalData();
   ];
 
   return (
-    <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col justify-center items-center relative lg:h-[450px]">
-      <img src={src} alt="image" />
-      <div className="absolute gap-y-2 py-8 md:py-2 lg:py-8 -top-24 md:-top-20 left-6 md:left-4 bg-[#FEFEFF] flex flex-col justify-center items-center w-30 lg:w-40">
+    <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col justify-center items-center relative ">
+      <img src={src} alt="image"/>
+      <div className="absolute gap-y-2 py-8 md:py-2 lg:py-8 -top-24 md:-top-20 left-6 md:left-8 bg-[#FEFEFF] flex flex-col justify-center items-center w-30 lg:w-32">
         <img src={check} alt="check" />
-        <h1 className="text-2xl font-tajawal font-normal text-black">
+        <h1 className="text-2xl font-tajawal font-normal text-theFontColor">
           {data?.homeAbout?.rating}
         </h1>
         <img src={stars} alt="stars" />
         <p className="text-theDGray font-tajawal text-sm font-normal lg:text-lg">
           {t('cardHappy')}
         </p>
-        <p className="text-black font-tajawal">
+        <p className="text-theFontColor font-tajawal">
           <span>{data?.homeAbout?.reviews}</span>+<span> {t('Reviews')}</span>
         </p>
       </div>
-      <div className="absolute bottom-0 right-0 py-4 gap-x-4 bg-theLGray px-4 flex justify-evenly items-center">
+      <div className="absolute bottom-0 right-0 py-4 w-3/4 gap-x-4 bg-theLGray px-4 flex justify-evenly items-center">
         {bottom.map((link) => (
           <div
             key={link.id}
             className="flex justify-between items-center gap-x-2"
           >
-            <h2 className="font-tajawal text-black">{t(link.key)}</h2>
+            <h2 className="font-tajawal text-theFontColor">{t(link.key)}</h2>
             <h1 className="text-xl md:text-3xl font-tajawal font-bold text-theRed text-center align-text-top">
               {link.number}
             </h1>

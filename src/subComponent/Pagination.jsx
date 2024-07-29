@@ -3,7 +3,6 @@ import { useLoaderData, useLocation, useNavigate } from 'react-router-dom';
 
 const Pagination = () => {
   const { data } = useLoaderData();
-  console.log(data)
   const currentPage = data.data.current_page;
   const pageCount = data.data.current_page.pages_length;
 
@@ -32,7 +31,6 @@ const Pagination = () => {
         {t('prev')}
       </button>
       {pages.map((pn) => {
-        {/* console.log('pn is' + pn, 'curr' + data.current_page); */}
         return (
           <button
             key={pn}

@@ -1,19 +1,24 @@
 import React from 'react';
 import theDate from '../assets/svg/mainPage/date.svg';
 import { useGlobalData } from '../context/GlobalDataContext';
-
+import ImageWithFallback from './ImageWithFallBack';
 const BigCarousel = () => {
   const {data} =useGlobalData();
   return (
     <div className="hidden w-4/5 bg-white  md:inline-flex md:carousel md:gap-x-3 lg:gap-x-4 carousel-end ">
       {data?.news?.map((link) => {
+       
         return (
           <div
             key={link.id}
             className="carousel-item w-2/5 lg:w-[320px]  flex flex-col bg-theLGray justify-center items-start gap-y-3 "
           >
-            <img src={link.image} alt="proj" />
-            <h1 className="font-tajawal font-normal text-lg text-black px-2">
+            <ImageWithFallback
+              src={link.image}
+              alt="proj"
+              className="w-full h-[180px] aspect-auto"
+            />
+            <h1 className="font-tajawal font-normal text-lg text-theFontColor px-2">
               {link.title}
             </h1>
             <p className="text-[#7C8893] font-tajawal font-normal md:text-md px-2 text-start">

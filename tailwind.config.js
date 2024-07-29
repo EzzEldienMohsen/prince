@@ -9,6 +9,7 @@ export default {
         theRed: '#B61F2E',
         theDGray: '#3E3E3E',
         theLGray: '#F8F8F8',
+        theFontColor: '#3E3E3E',
       },
       fontFamily: {
         tajawal: ['Tajawal', 'sans-serif'],

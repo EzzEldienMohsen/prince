@@ -1,10 +1,11 @@
 import React from 'react';
 import play from '../assets/svg/video/play.svg';
 import { useGlobalData } from '../context/GlobalDataContext';
+import { useGlobalContext } from '../context/GlobalContext';
 
 const Video = () => {
   const { data } = useGlobalData();
-
+const {isArabic} = useGlobalContext()
 
 
  
@@ -12,9 +13,10 @@ const Video = () => {
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}`;
 
   return (
-    <div className="relative flex justify-center items-center w-4/5 bg-theRed max-w-xl md:w-2/5 lg::w-1/2 h-[350px] p-4">
-      <div className="relative w-full h-full">
-        <div className="absolute top-0 left-0 right-[-20%] bottom-0">
+    <div className="relative flex justify-center items-center  max-w-xl md:w-4/5 lg:w-[48%] h-[200px] md:h-[330px] lg:h-[420px]  p-4">
+      <div className={`absolute top-0 ${isArabic?"left-0" :"right-0"} w-4/5 bg-theRed h-full -z-1 `}></div>
+      
+        <div className="z-10 h-full w-full">
           <iframe
             width="100%"
             height="100%"
@@ -25,13 +27,12 @@ const Video = () => {
             className="w-full h-full object-cover"
           ></iframe>
         </div>
-        <div className="absolute top-0 left-0 right-[-20%] bottom-0 flex justify-center items-center">
+        <div className="absolute inset-0 flex justify-center items-center z-10">
           <button className="bg-theDGray rounded-full shadow-md">
             <img src={play} alt="Play" className="w-24 h-24" />
           </button>
         </div>
       </div>
-    </div>
   );
 };
 
