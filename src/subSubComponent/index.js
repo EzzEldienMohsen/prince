@@ -7,3 +7,4 @@ export { default as MainButtons } from './MainButtons';
 export { default as BigCarousel } from './BigCarousel';
 export { default as SmallCarousel } from './SmallCarousel';
 export { default as ImageWithFallBack } from './ImageWithFallBack';
+export { default as TheModalBody } from './TheModalBody';

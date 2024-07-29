@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageWithFallBack } from '../subSubComponent';
+import { ImageWithFallBack, TheModalBody } from '../subSubComponent';
 const ProjectsCards = ({ theData }) => {
   return (
     <div className="flex flex-col mt-4 md:mt-0 justify-center items-center w-full lg:w-4/5 bg-white gap-y-8 md:gap-y-4 md:grid md:grid-cols-2 md:justify-evenly lg:grid-cols-3 md:gap-x-10 ">
@@ -37,24 +37,13 @@ const ProjectsCards = ({ theData }) => {
                 </div>
               </div>{' '}
             </button>
-            <dialog id={link.id} className="modal">
-              <div className="modal-box flex flex-col justify-center items-start gap-y-3 py-10 px-4">
-                <form method="dialog">
-                  {/* if there is a button in form, it will close the modal */}
-                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                    ✕
-                  </button>
-                </form>
-                <ImageWithFallBack
-                  src={link.image}
-                  alt="proj"
-                  className="w-full h-[180px] aspect-auto"
-                />
-                <h1 className="font-tajawal font-normal text-lg text-theFontColor px-3">
-                  {link.title}
-                </h1>
-              </div>
-            </dialog>
+            <TheModalBody
+              theData={theData}
+              link={link}
+              slideId={slideId}
+              prevSlideId={prevSlideId}
+              nextSlideId={nextSlideId}
+            />
           </>
         );
       })}
