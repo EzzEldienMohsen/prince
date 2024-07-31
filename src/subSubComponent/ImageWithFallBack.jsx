@@ -21,7 +21,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
     );
   } else {
     return (
-      <div className="flex w-[80vw]  justify-center items-center bg-[#DADADA] h-[214px]">
+      <div className="flex w-[80vw] md:w-full  justify-center items-center bg-[#DADADA] h-[214px]">
         <img
           src={imgSrc}
           alt={alt}
