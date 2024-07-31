@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import play from '../assets/svg/video/play.svg';
 import { useGlobalData } from '../context/GlobalDataContext';
 import { useGlobalContext } from '../context/GlobalContext';
@@ -7,10 +7,31 @@ const Video = () => {
   const { data } = useGlobalData();
   const { isArabic } = useGlobalContext();
   const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
 
   const handlePlayButtonClick = () => {
-    setIsPlaying(true);
-    // Additional logic can be added here if you have access to control the iframe playback
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      console.error('Video element is not available.');
+    }
+  };
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const handlePause = () => {
+    setIsPlaying(false);
   };
 
   return (
@@ -22,15 +43,18 @@ const Video = () => {
       ></div>
 
       <div className="z-10 h-full w-full">
-        <iframe
+        <video
+          ref={videoRef}
           width="100%"
           height="100%"
           src={data?.homeAbout?.hero_video}
-          title="YouTube video player"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          title="Video player"
           className="w-full h-full object-cover"
-        ></iframe>
+          onPause={handlePause}
+          onEnded={handlePause}
+          onClick={handleVideoClick} // Add click event to the video
+          controls={false} // Hide default controls
+        ></video>
       </div>
 
       {!isPlaying && (
