@@ -7,7 +7,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
   React.useEffect(() => {
     if (!src) {
       setImgSrc(errorGuard);
-      setTheClass('bg-[#DADADA] flex justify-center items-center');
+      setTheClass('bg-[#DADADA]  flex justify-center items-center');
     }
   }, [src]);
   if (src) {
@@ -21,7 +21,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
     );
   } else {
     return (
-      <div className="flex w-full justify-center items-center bg-[#DADADA] h-[214px]">
+      <div className="flex w-[80vw]  justify-center items-center bg-[#DADADA] h-[214px]">
         <img
           src={imgSrc}
           alt={alt}
