@@ -15,9 +15,12 @@ const AboutInfoContent = ({data}) => {
           {t('aboutSecondSectionBigTitle')}
         </h1>
 
-        <p className="text-[#7C8893] font-tajawal font-normal md:text-sm">
-          {t('aboutAboutText')}
-        </p>
+        <p
+          className={`text-[#7C8893] font-tajawal font-normal md:text-sm ${
+            isArabic ? 'mr-4' : 'ml-4'
+          } `}
+          dangerouslySetInnerHTML={{ __html: data.about_services }}
+        />
         <p
           className={`text-[#7C8893] font-tajawal font-normal md:text-sm ${
             isArabic ? 'mr-4' : 'ml-4'

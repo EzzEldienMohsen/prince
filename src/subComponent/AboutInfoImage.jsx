@@ -1,8 +1,9 @@
 import React from 'react';
-import src from "../assets/svg/secondaryPages/AboutFinalImage.svg"
+import theSrc from "../assets/svg/secondaryPages/AboutFinalImage.svg"
 import { useGlobalContext } from '../context/GlobalContext';
-const AboutInfoImage = () => {
+const AboutInfoImage = ({data}) => {
     const {isArabic}  = useGlobalContext()
+    const src= data?.company_services_image || theSrc
   return (
     <div className="w-full lg:w-1/2 flex justify-center items-center relative py-4 px-4">
       <div
