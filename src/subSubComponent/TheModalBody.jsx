@@ -4,6 +4,7 @@ import { useGlobalContext } from './../context/GlobalContext';
 import close from "../assets/svg/projectCard/close.svg"
 const TheModalBody = ({ theData, link, slideId, nextSlideId, prevSlideId }) => {
   const {isArabic} = useGlobalContext()
+  console.log(link,theData)
   return (
     <dialog
       id={link.id}
@@ -21,7 +22,7 @@ const TheModalBody = ({ theData, link, slideId, nextSlideId, prevSlideId }) => {
             className="carousel-item flex justify-center relative w-full"
           >
             <ImageWithFallback
-              src={link.image}
+              src={link.images[0]}
               alt={link.title}
               className=" aspect-auto"
             />{' '}

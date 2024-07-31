@@ -8,7 +8,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
   React.useEffect(() => {
     if (!src) {
       setImgSrc(errorGuard);
-      setTheClass('bg-[#DADADA] flex justify-center items-center h-[214px]');
+      setTheClass('bg-[#DADADA] flex justify-center items-center');
     }
   }, [src]);
   return (
