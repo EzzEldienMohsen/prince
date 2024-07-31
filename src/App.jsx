@@ -7,8 +7,6 @@ import {
   Landing,
   ProjectsPage,
   ProjectsCategorizedPage,
-  NewsPage,
-  SingleNewsPage,
   PrivacyPolicy,
   OwnerShip,
 } from './pages';
@@ -20,8 +18,6 @@ import {loader as layoutLoader} from "./pages/Home"
 import {loader as aboutLoader} from "./pages/AboutPage"
 import {loader as projectsLoader} from "./pages/ProjectsPage"
 import  {loader as projectsCatLoader} from "./pages/ProjectsCategorizedPage"
-import  {loader as newsLoader} from "./pages/NewsPage"
-import  {loader as singleNewsLoader} from "./pages/SingleNewsPage"
 const Home = React.lazy(() => import('./pages/Home'));
 
 export const queryClient = new QueryClient({
@@ -68,16 +64,7 @@ const AppRouter = () => {
           path: '/ownerShip',
           element: <OwnerShip />,
         },
-        {
-          path: '/news',
-          element: <NewsPage />,
-          loader: newsLoader(queryClient, language),
-        },
-        {
-          path: '/news/:id',
-          element: <SingleNewsPage />,
-          loader: singleNewsLoader(queryClient, language),
-        },
+       
         {
           path: '/projects/category/:cat',
           element: <ProjectsCategorizedPage />,

@@ -4,10 +4,8 @@ import breadCrumpImg from '../assets/svg/secondaryPages/titleVector.svg';
 import specialty from './svg/mainPage/Speciality.svg';
 import skill from './svg/mainPage/skill.svg';
 
-import vision from "../assets/svg/secondaryPages/vision.svg"
-import message from "../assets/svg/secondaryPages/message.svg"
-
-
+import vision from '../assets/svg/secondaryPages/vision.svg';
+import message from '../assets/svg/secondaryPages/message.svg';
 
 export const expertise = [
   {
@@ -38,18 +36,13 @@ export const theVision = [
   },
 ];
 
-
 export const pages = [
   {
     id: nanoid(),
     key: 'main',
     to: '/',
   },
-  {
-    id: nanoid(),
-    key: 'mainLatestBigTitle',
-    to: '/news',
-  },
+
   {
     id: nanoid(),
     key: 'mainProjects',
@@ -57,7 +50,7 @@ export const pages = [
   },
   {
     id: nanoid(),
-    key:  "about2",
+    key: 'about2',
     to: '/about',
   },
 ];
@@ -67,11 +60,7 @@ export const footerLinks = [
     key: 'main',
     to: '/',
   },
-  {
-    id: nanoid(),
-    key: 'mainLatestBigTitle',
-    to: '/news',
-  },
+
   {
     id: nanoid(),
     key: 'mainProjects',
@@ -84,9 +73,6 @@ export const footerLinks = [
   },
 ];
 
-
-
-
 export const mainFormOptions = [
   { value: '', label: 'اختر المدينة' },
   { value: 'dubai', label: 'دبي' },
@@ -94,41 +80,36 @@ export const mainFormOptions = [
   { value: 'sharjah', label: 'الشارقة' },
 ];
 
-
 export const aboutBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
-  { id: nanoid(), img: "", key: 'about2', to: '/about' },
-
+  { id: nanoid(), img: '', key: 'about2', to: '/about' },
 ];
 export const projectsBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'mainProjects', to: '/projects' },
 ];
-export const newsBreadCrumbs = [
-  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
-  { id: nanoid(), img: '', key: 'mainLatestBigTitle', to: '/news' },
-];
+
 export const privacyBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'privacy', to: '/privacy' },
 ];
- 
+
 export const ownerShipBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'ownerShip', to: '/ownerShip' },
 ];
 
 export const privacyLorem = [
-  {id:nanoid(),text:"lorem1"},
-  {id:nanoid(),text:"lorem2"},
-  {id:nanoid(),text:"lorem3"},
-  {id:nanoid(),text:"lorem4"},
-  {id:nanoid(),text:"lorem5"},
-  {id:nanoid(),text:"lorem1"},
-  {id:nanoid(),text:"lorem5"},
-  {id:nanoid(),text:"lorem4"},
-  {id:nanoid(),text:"lorem3"},
-  {id:nanoid(),text:"lorem2"},
-  {id:nanoid(),text:"lorem4"},
-  {id:nanoid(),text:"lorem2"},
-]
+  { id: nanoid(), text: 'lorem1' },
+  { id: nanoid(), text: 'lorem2' },
+  { id: nanoid(), text: 'lorem3' },
+  { id: nanoid(), text: 'lorem4' },
+  { id: nanoid(), text: 'lorem5' },
+  { id: nanoid(), text: 'lorem1' },
+  { id: nanoid(), text: 'lorem5' },
+  { id: nanoid(), text: 'lorem4' },
+  { id: nanoid(), text: 'lorem3' },
+  { id: nanoid(), text: 'lorem2' },
+  { id: nanoid(), text: 'lorem4' },
+  { id: nanoid(), text: 'lorem2' },
+];
