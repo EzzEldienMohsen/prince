@@ -61,6 +61,7 @@ export const GlobalDataProvider = ({ children }) => {
 
   useEffect(() => {
     const endpoints = [
+      { url: '/layout', key: 'layout' },
       { url: '/home/about', key: 'homeAbout' },
       { url: '/contact/cities', key: 'cities' },
       { url: '/home/faqs', key: 'faqs' },

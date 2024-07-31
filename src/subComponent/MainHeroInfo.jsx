@@ -1,8 +1,10 @@
 import React from 'react'
 import { MainButtons } from '../subSubComponent';
 import { useTranslation } from 'react-i18next';
+import { useGlobalData } from '../context/GlobalDataContext';
 
 const MainHeroInfo = () => {
+  const {data} =useGlobalData()
   const {t} = useTranslation()
   return (
     <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start  md:gap-y-4 lg:gap-y-6 ">
@@ -16,7 +18,7 @@ const MainHeroInfo = () => {
       <p className="text-[#7C8893] w-full font-tajawal font-normal md:text-xl">
         {t('mainPageHeroTextAndOthers')}{' '}
       </p>
-      <MainButtons />
+      <MainButtons data={data.layout} />
     </div>
   );
 }

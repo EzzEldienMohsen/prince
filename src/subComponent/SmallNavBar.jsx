@@ -13,7 +13,7 @@ const SmallNavBar = ({ data }) => {
     const {toggleLang} = useGlobalContext()
 
   return (
-    <ul className="menu  min-h-full font-tajawal w-60 md:w-80 p-4 bg-theLGray">
+    <ul className="menu  min-h-full font-tajawal w-60 md:w-80 p-4 bg-theLGray z-30">
       <div className="flex justify-center items-center py-14 md:py-4">
         <img src={data.logo} alt="logo" className="w-1/2" />
       </div>

@@ -17,16 +17,16 @@ const MainButtons = () => {
    }
   return (
     <div className="flex justify-start items-center gap-x-4">
-        <a target="_blank" href={data?.homeAbout?.intro_video}>
-      <button className="bg-theRed text-white font-tajawal flex justify-center items-center gap-x-2 py-5 px-8">
-          <p >{t('mainPageButtopn')} </p>
+      <a target="_blank" href={data?.homeAbout?.intro_video}>
+        <button className="bg-theRed text-white font-tajawal flex justify-center items-center gap-x-2 py-5 px-8">
+          <p>{t('mainPageButtopn')} </p>
           <img src={play} alt="play" />
-      </button>
-        </a>
-      <a href="" target="_blank">
+        </button>
+      </a>
+      <a href={`https://wa.me/${data?.layout?.whatsapp_1}`} target="_blank">
         <img src={src} alt="whatsApp" />
       </a>
-      <a href="" target="_blank">
+      <a href={`https://wa.me/${data?.layout?.whatsapp_2}`} target="_blank">
         <img src={src} alt="whatsApp" />
       </a>
     </div>

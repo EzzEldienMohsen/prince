@@ -29,7 +29,7 @@ const Header = ({ data }) => {
             />
           </label>
         </div>
-        <div className="drawer-side ">
+        <div className="drawer-side z-30">
           <label htmlFor="small-nav-drawer" className="drawer-overlay"></label>
           <SmallNavBar data={data} />
         </div>
