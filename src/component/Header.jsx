@@ -8,7 +8,7 @@ const Header = ({ data }) => {
   const {isArabic} = useGlobalContext()
   return (
     <div className="px-8 lg:px-16 flex justify-between items-center py-4 lg:bg-theLGray w-full">
-      <img src={data.logo} alt="logo" className="w-1/5" />
+      <img src={data.logo} alt="logo" className="w-[124px] md:w-[184px] lg:w-[234px]" />
       <BigNavBar />
       <HeaderButtons data={data} />
 
