@@ -13,7 +13,7 @@ const {isArabic} = useGlobalContext()
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}`;
 
   return (
-    <div className="relative flex justify-center items-center w-[323px]  max-w-xl md:w-[650px] lg:w-[831px] h-[237.4px] md:h-[476.87px] lg:h-[580px]  p-3 md:p-6 lg:p-8">
+    <div className="relative flex justify-center items-center w-[323px]   md:w-[650px] lg:w-[900px] h-[237.4px] md:h-[476.87px] lg:h-[580px]  p-3 md:p-6 lg:p-8">
       <div className={`absolute top-0 ${isArabic?"left-0" :"right-0"} w-4/5 bg-theRed h-full -z-1 `}></div>
       
         <div className="z-10 h-full w-full">
