@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { MainButtons } from '../subSubComponent';
 import { useTranslation } from 'react-i18next';
-const AboutMainInfo = ({textKey,isTrue}) => {
-  const {t} = useTranslation()
+const AboutMainInfo = ({ textKey, isTrue, data }) => {
+  const { t } = useTranslation();
   return (
     <div className="w-full mt-6 lg:mt-0 lg:w-2/5 flex flex-col justify-center items-start gap-y-4 lg:gap-y-8 ">
       <p className="font-tajawal text-theRed text-2xl">{t('about')}</p>
@@ -10,12 +10,19 @@ const AboutMainInfo = ({textKey,isTrue}) => {
         {t('mainPageTitle')}
       </h1>
 
-      <p className="text-[#7C8893] font-tajawal font-normal md:text-sm">
-        {t(textKey)}
-      </p>
-      {isTrue? <MainButtons /> : null}
+      {data?.content ? (
+        <p
+          className="text-[#7C8893] font-tajawal font-normal md:text-sm"
+          dangerouslySetInnerHTML={{ __html: data.content }}
+        />
+      ) : (
+        <p className="text-[#7C8893] font-tajawal font-normal md:text-sm">
+          {t(textKey)}
+        </p>
+      )}
+      {isTrue ? <MainButtons /> : null}
     </div>
   );
-}
+};
 
-export default AboutMainInfo
+export default AboutMainInfo;
