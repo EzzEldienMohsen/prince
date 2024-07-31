@@ -31,7 +31,7 @@ const AboutPage = () => {
     <div className="flex flex-col justify-center items-center w-full ">
       <TitleComponent title="aboutPageTitle" arrows={aboutBreadCrumbs}/>
       <FirstMainCard />
-      <AboutMain textKey="aboutAboutText" isTrue={false}/>
+      <AboutMain textKey="aboutAboutText" isTrue={false} data={data.data}/>
       <SecondAboutCards />
       <AboutInfoSection data={data.data} />
     </div>
