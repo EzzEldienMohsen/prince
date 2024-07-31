@@ -51,5 +51,10 @@
   "prev":"previous",
   "next":"next",
   "SingleNewsTitle":"Latest news about our construction projects",
-  "lang":"language"
+  "lang":"language",
+  "lorem1" : "This text is an example of text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of letters that the application generates.",
+  "lorem2": "If you need a larger number of paragraphs, the Arabic text generator allows you to increase the number of paragraphs as you want. The text will not appear divided and does not contain linguistic errors. The Arabic text generator is useful for website designers in particular, as the client often needs to see a real image. For website design.",
+  "lorem3":"Hence, the designer must place temporary texts on the design to show the client the complete form. The role of the Arabic text generator is to save the designer the trouble of searching for alternative text that has nothing to do with the topic the design is talking about, so it appears in an inappropriate way.",
+  "lorem4":"This text can be installed on any design without a problem. It will not look like copied, unorganized, unformatted, or even incomprehensible text. Because it is still an alternative and temporary text.",
+  "lorem5":"This text is an example of text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of letters that the application generates."
 }

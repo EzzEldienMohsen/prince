@@ -9,6 +9,8 @@ import {
   ProjectsCategorizedPage,
   NewsPage,
   SingleNewsPage,
+  PrivacyPolicy,
+  OwnerShip,
 } from './pages';
 import { GlobalProvider, useGlobalContext } from './context/GlobalContext';
 import { GlobalDataProvider } from './context/GlobalDataContext';
@@ -57,6 +59,14 @@ const AppRouter = () => {
           path: '/projects',
           element: <ProjectsPage />,
           loader: projectsLoader(queryClient, language),
+        },
+        {
+          path: '/privacy',
+          element: <PrivacyPolicy />,
+        },
+        {
+          path: '/ownerShip',
+          element: <OwnerShip />,
         },
         {
           path: '/news',

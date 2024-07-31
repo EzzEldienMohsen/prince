@@ -108,4 +108,27 @@ export const newsBreadCrumbs = [
   { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
   { id: nanoid(), img: '', key: 'mainLatestBigTitle', to: '/news' },
 ];
+export const privacyBreadCrumbs = [
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  { id: nanoid(), img: '', key: 'privacy', to: '/privacy' },
+];
  
+export const ownerShipBreadCrumbs = [
+  { id: nanoid(), img: breadCrumpImg, key: 'main', to: '/' },
+  { id: nanoid(), img: '', key: 'ownerShip', to: '/ownerShip' },
+];
+
+export const privacyLorem = [
+  {id:nanoid(),text:"lorem1"},
+  {id:nanoid(),text:"lorem2"},
+  {id:nanoid(),text:"lorem3"},
+  {id:nanoid(),text:"lorem4"},
+  {id:nanoid(),text:"lorem5"},
+  {id:nanoid(),text:"lorem1"},
+  {id:nanoid(),text:"lorem5"},
+  {id:nanoid(),text:"lorem4"},
+  {id:nanoid(),text:"lorem3"},
+  {id:nanoid(),text:"lorem2"},
+  {id:nanoid(),text:"lorem4"},
+  {id:nanoid(),text:"lorem2"},
+]

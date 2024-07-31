@@ -13,3 +13,4 @@ export { default as TitleComponent } from './TitleComponent';
 export { default as SecondAboutCards } from './SecondAboutCards';
 export { default as AboutInfoSection } from './AboutInfoSection';
 export { default as SingleNewsContent } from './SingleNewsContent';
+export { default as PrivacyContent } from './PrivacyContent';
