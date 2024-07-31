@@ -13,7 +13,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
     <img
       src={imgSrc}
       alt={alt}
-      className={className}
+      className={`${className} bg-[#BBBCBC]`}
       onError={() => setImgSrc(errorGuard)}
     />
   );
