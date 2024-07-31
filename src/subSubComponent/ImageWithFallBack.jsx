@@ -13,7 +13,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
     <img
       src={imgSrc}
       alt={alt}
-      className={`${className} bg-[#DADADA]`}
+      className={`${className} bg-[#DADADA] flex justify-center items-center`}
       onError={() => setImgSrc(errorGuard)}
     />
   );

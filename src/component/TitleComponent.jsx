@@ -14,6 +14,7 @@ const TitleComponent = ({ title, arrows }) => {
             return (
               <Link
                 key={link.id}
+                to={link.to}
                 className="flex justify-between items-center gap-x-2"
               >
                 <p

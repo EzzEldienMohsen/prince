@@ -69,19 +69,18 @@ export const footerLinks = [
   },
   {
     id: nanoid(),
-    key: 'about',
-    to: '/about',
-  },
-  {
-    id: nanoid(),
-    key: 'latest',
+    key: 'mainLatestBigTitle',
     to: '/news',
   },
- 
   {
     id: nanoid(),
-    key: 'project',
+    key: 'mainProjects',
     to: '/projects',
+  },
+  {
+    id: nanoid(),
+    key: 'about2',
+    to: '/about',
   },
 ];
 
