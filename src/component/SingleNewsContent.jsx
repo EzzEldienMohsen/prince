@@ -7,7 +7,7 @@ const SingleNewsContent = ({data}) => {
  
   return (
     <div className=" w-full  flex flex-col px-8 lg:px-16  justify-center  items-start gap-y-3 ">
-      <ImageWithFallBack src={data.image} alt="proj" className="w-full" />
+      <ImageWithFallBack src={data.image} alt="proj" className="w-full lg:h-[522px] md:h-[369px] h-[181px]" />
       <div className="flex justify-between items-center gap-x-1">
         <img src={calender} alt="eng" />
         <p className="text-[#7C8893] font-tajawal font-normal md:text-xs px-2">

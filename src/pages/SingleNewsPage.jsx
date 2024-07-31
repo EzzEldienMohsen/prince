@@ -33,7 +33,7 @@ const SingleNewsPage = () => {
         const { data } = useLoaderData();
   return (
     <div className="w-full flex justify-center flex-col items-center gap-y-20">
-      <TitleComponent title="SingleNewsTitle" arrows={singleNewsBreadCrumbs} />
+      <TitleComponent title="SingleNewsTitle" arrows={singleNewsBreadCrumbs}  />
       <SingleNewsContent data={data.data} />
     </div>
   );
