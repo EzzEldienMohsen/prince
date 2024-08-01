@@ -7,7 +7,7 @@ import { useGlobalContext } from '../context/GlobalContext';
 import arrow from "../assets/svg/header/arrow.svg"
 import src from "../assets/svg/header/whatsApp.svg"
 
-const SmallNavBar = ({ data }) => {
+const SmallNavBar = ({ data,closeDrawer }) => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
     const {toggleLang} = useGlobalContext()
@@ -23,6 +23,7 @@ const SmallNavBar = ({ data }) => {
           return (
             <motion.li
               key={page.id}
+              onClick={closeDrawer}
               className={`py-2 border-b-[1px] ${
                 isSelected
                   ? 'text-theRed  decoration-[theRed]'
@@ -34,18 +35,24 @@ const SmallNavBar = ({ data }) => {
           );
         })}
         <li
-          onClick={toggleLang}
+          onClick={() => {
+            toggleLang();
+            closeDrawer();
+          }}
           className="py-2 border-b-[1px] text-theFontColor flex flex-row justify-between "
         >
           <a className="w-1/5">{t('lang')}</a>
           <img src={arrow} alt="arrow" className=" " />
         </li>
       </ul>
-      <div className="mt-4 flex w-full flex-row justify-center items-center gap-x-4">
-        <a href={`https://wa.me/${data.whatsapp_1}`} target="_blank">
+      <div
+        
+        className="mt-4 flex w-full flex-row justify-center items-center gap-x-4"
+      >
+        <a onClick={closeDrawer} href={`https://wa.me/${data.whatsapp_1}`} target="_blank">
           <img src={src} alt="whatsApp" />
         </a>
-        <a href={`https://wa.me/${data.whatsapp_2}`} target="_blank">
+        <a onClick={closeDrawer} href={`https://wa.me/${data.whatsapp_2}`} target="_blank">
           <img src={src} alt="whatsApp" />
         </a>
       </div>

@@ -6,6 +6,12 @@ import { useGlobalContext } from '../context/GlobalContext';
 
 const Header = ({ data }) => {
   const {isArabic} = useGlobalContext()
+
+    const closeDrawer = () => {
+      const drawerCheckbox = document.getElementById('small-nav-drawer');
+      if (drawerCheckbox) drawerCheckbox.checked = false;
+    };
+
   return (
     <div className="px-8 lg:px-16 flex justify-between items-center py-4  lg:bg-theLGray w-full">
       <img src={data.logo} alt="logo" className="w-[124px] md:w-[184px] lg:w-[234px] h-[35px] md:h-[52px] lg:h-[66px]" />
@@ -31,7 +37,7 @@ const Header = ({ data }) => {
         </div>
         <div className="drawer-side z-30">
           <label htmlFor="small-nav-drawer" className="drawer-overlay"></label>
-          <SmallNavBar data={data} />
+          <SmallNavBar data={data} closeDrawer={closeDrawer}/>
         </div>
       </div>
     </div>

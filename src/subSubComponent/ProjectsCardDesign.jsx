@@ -4,7 +4,7 @@ import drawing from "../assets/svg/projectCard/shopDrawing.svg"
 import location from "../assets/svg/projectCard/location.svg"
 const ProjectsCardDesign = ({link}) => {
   return (
-    <div className="w-full flex flex-col h-[387px] bg-theLGray justify-items-stretch items-start gap-y-3">
+    <div className="md:w-full w-[320px] flex flex-col h-[387px] bg-theLGray justify-items-stretch items-start gap-y-3">
       <ImageWithFallback
         src={link.images[0]}
         alt={link.title}
