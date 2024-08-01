@@ -32,7 +32,14 @@ export const loader =
   };
 
 const ProjectsCategorizedPage = () => {
-    const{data} =useLoaderData()
+    const{data,isLoading} =useLoaderData()
+    if (isLoading) {
+      return (
+        <div className="w-full aspect-square flex justify-center items-center">
+          <span className="loading loading-spinner text-theRed loading-xl"></span>
+        </div>
+      );
+    }
   return (
     <div className="w-full flex justify-center flex-col items-center gap-y-20">
       <TitleComponent title="projectsPageTitle" arrows={projectsBreadCrumbs} />

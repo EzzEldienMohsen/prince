@@ -72,9 +72,17 @@ export const GlobalDataProvider = ({ children }) => {
     endpoints.forEach(({ url, key }) => fetchData(url, key, language));
   }, [language, fetchData]);
 
-  return (
-    <GlobalDataContext.Provider value={{ data, isLoading, fetchData }}>
-      {children}
-    </GlobalDataContext.Provider>
-  );
+  if (isLoading) {
+    return (
+      <div className="w-full aspect-square flex justify-center items-center">
+        <span className="loading loading-spinner text-theRed loading-xl"></span>
+      </div>
+    );
+  } else {
+    return (
+      <GlobalDataContext.Provider value={{ data, isLoading, fetchData }}>
+        {children}
+      </GlobalDataContext.Provider>
+    );
+  }
 };
