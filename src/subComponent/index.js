@@ -18,3 +18,4 @@ export { default as AboutInfoImage } from './AboutInfoImage';
 export { default as AboutInfoContent } from './AboutInfoContent';
 export { default as Pagination } from './Pagination';
 export { default as MainProjectsCard } from './MainProjectsCard';
+export { default as MainProjectsNavBar } from './MainProjectsNavBar';
