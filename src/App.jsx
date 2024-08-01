@@ -16,6 +16,7 @@ import { GlobalDataProvider } from './context/GlobalDataContext';
 // loaders
 import {loader as layoutLoader} from "./pages/Home"
 import {loader as aboutLoader} from "./pages/AboutPage"
+import {loader as privacyLoader} from "./pages/PrivacyPolicy"
 import {loader as projectsLoader} from "./pages/ProjectsPage"
 import  {loader as projectsCatLoader} from "./pages/ProjectsCategorizedPage"
 const Home = React.lazy(() => import('./pages/Home'));
@@ -59,12 +60,13 @@ const AppRouter = () => {
         {
           path: '/privacy',
           element: <PrivacyPolicy />,
+          loader: privacyLoader(queryClient, language),
         },
         {
           path: '/ownerShip',
           element: <OwnerShip />,
         },
-       
+
         {
           path: '/projects/category/:cat',
           element: <ProjectsCategorizedPage />,

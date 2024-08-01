@@ -3,7 +3,6 @@ import ImageWithFallback from './ImageWithFallBack';
 import drawing from "../assets/svg/projectCard/shopDrawing.svg"
 import location from "../assets/svg/projectCard/location.svg"
 const ProjectsCardDesign = ({link}) => {
-  console.log(link)
   return (
     <div className="w-full flex flex-col h-[387px] bg-theLGray justify-items-stretch items-start gap-y-3">
       <ImageWithFallback
