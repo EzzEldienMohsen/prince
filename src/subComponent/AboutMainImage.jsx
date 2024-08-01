@@ -33,7 +33,7 @@ const {isArabic} = useGlobalContext()
         <h1 className="text-4xl font-tajawal font-normal text-theFontColor">
           {data?.rating}
         </h1>
-        <img src={stars} alt="stars" />
+        <img src={stars} alt="stars" className='w-4/5' />
         <p className="text-theDGray font-tajawal text-sm font-normal lg:text-lg">
           {t('cardHappy')}
         </p>

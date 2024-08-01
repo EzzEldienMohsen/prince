@@ -5,7 +5,7 @@ import ImageWithFallback from './ImageWithFallBack';
 const SmallCarousel = () => {
   const { data } = useGlobalData();
   return (
-    <div className="carousel carousel-vertical md:hidden w-4/5 gap-y-6 bg-white h-[600px] flex flex-col justify-start items-center">
+    <div className="carousel carousel-vertical md:hidden w-4/5 gap-y-6 bg-white  flex flex-col justify-start items-center">
       {data?.news?.map((link) => {
         return (
           <div

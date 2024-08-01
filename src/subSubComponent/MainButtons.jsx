@@ -16,7 +16,7 @@ const MainButtons = () => {
      );
    }
   return (
-    <div className="flex justify-start items-center gap-x-4">
+    <div className="flex justify-start text-xs items-center gap-x-4 mt-4 md:text-md md:mt-2">
       <a target="_blank" href={data?.homeAbout?.intro_video}>
         <button className="bg-theRed text-white font-tajawal flex justify-center items-center gap-x-2 py-5 px-8">
           <p>{t('mainPageButtopn')} </p>
