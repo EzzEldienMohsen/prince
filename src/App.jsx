@@ -2,24 +2,21 @@ import React, { Suspense } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import {
-  AboutPage,
-  Landing,
-  ProjectsPage,
-  ProjectsCategorizedPage,
-  PrivacyPolicy,
-  OwnerShip,
-} from './pages';
+import { AboutPage, Landing, PrivacyPolicy, OwnerShip } from './pages';
 import { GlobalProvider, useGlobalContext } from './context/GlobalContext';
 import { GlobalDataProvider } from './context/GlobalDataContext';
 
 // loaders
-import {loader as layoutLoader} from "./pages/Home"
-import {loader as aboutLoader} from "./pages/AboutPage"
-import {loader as privacyLoader} from "./pages/PrivacyPolicy"
-import {loader as projectsLoader} from "./pages/ProjectsPage"
-import  {loader as projectsCatLoader} from "./pages/ProjectsCategorizedPage"
+import { loader as layoutLoader } from './pages/Home';
+import { loader as aboutLoader } from './pages/AboutPage';
+import { loader as privacyLoader } from './pages/PrivacyPolicy';
+import { loader as projectsLoader } from './pages/ProjectsPage';
+import { loader as projectsCatLoader } from './pages/ProjectsCategorizedPage';
 const Home = React.lazy(() => import('./pages/Home'));
+const ProjectsPage = React.lazy(() => import('./pages/ProjectsPage'));
+const ProjectsCategorizedPage = React.lazy(() =>
+  import('./pages/ProjectsCategorizedPage')
+);
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,7 +34,13 @@ const AppRouter = () => {
     {
       path: '/',
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className="w-full aspect-square flex justify-center items-center">
+              <span className="loading loading-spinner text-theRed loading-xl"></span>
+            </div>
+          }
+        >
           <Home />
         </Suspense>
       ),
@@ -54,7 +57,17 @@ const AppRouter = () => {
         },
         {
           path: '/projects',
-          element: <ProjectsPage />,
+          element: (
+            <Suspense
+              fallback={
+                <div className="w-full aspect-square flex justify-center items-center">
+                  <span className="loading loading-spinner text-theRed loading-xl"></span>
+                </div>
+              }
+            >
+              <ProjectsPage />
+            </Suspense>
+          ),
           loader: projectsLoader(queryClient, language),
         },
         {
@@ -69,7 +82,17 @@ const AppRouter = () => {
 
         {
           path: '/projects/category/:cat',
-          element: <ProjectsCategorizedPage />,
+          element: (
+            <Suspense
+              fallback={
+                <div className="w-full aspect-square flex justify-center items-center">
+                  <span className="loading loading-spinner text-theRed loading-xl"></span>
+                </div>
+              }
+            >
+              <ProjectsCategorizedPage />
+            </Suspense>
+          ),
           loader: projectsCatLoader(queryClient, language),
         },
       ],
